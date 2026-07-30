@@ -65,6 +65,7 @@ body{
   border-radius:999px;letter-spacing:.02em;text-transform:uppercase}
 .badge-kat{background:var(--primary-hell);color:var(--primary)}
 .badge-entf{background:#eef2f7;color:var(--text-schwach)}
+.badge-ort{background:#eef4ee;color:#2f5d3f}
 .geprueft-badge{font-size:.74rem;font-weight:700;background:#e7f0ea;color:#1d6b4f;
   padding:3px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.02em}
 
@@ -72,6 +73,7 @@ body{
 .event h3{font-size:1.22rem;font-weight:700;margin:.2rem 0 .1rem;color:var(--text);
   line-height:1.3;letter-spacing:-.01em}
 .event .ort{font-weight:600;color:var(--text-schwach);font-size:.98rem}
+.event .wetter{font-size:.9rem;color:var(--text-schwach);margin-top:.3rem;font-weight:500}
 .event .besch{font-size:.96rem;margin:.6rem 0;color:var(--text);line-height:1.55}
 .event .meta{font-size:.85rem;color:var(--text-schwach)}
 

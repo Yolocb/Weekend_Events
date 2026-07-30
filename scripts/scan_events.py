@@ -338,6 +338,67 @@ def ist_js_seite(html):
 
 
 # ----------------------------------------------------------------------
+# Indoor/Outdoor-Erkennung + Wetter (Open-Meteo, kein API-Key)
+# ----------------------------------------------------------------------
+DRAUSSEN_KEYS = ["park", "freibad", "see", "wiese", "platz", "markt", "strasse",
+                 "innenstadt", "garten", "hof", "wald", "open air", "openair",
+                 "spielplatz", "gelaende", "festplatz", "fussgaengerzone", "flohmarkt"]
+DRINNEN_KEYS = ["museum", "halle", "theater", "kino", "bibliothek", "buecherei",
+                "saal", "zentrum", "haus", "schule", "kirche", "arena", "indoor",
+                "werkstatt", "atelier"]
+
+
+def drinnen_draussen(text):
+    """Grobe Einschaetzung: 'drinnen' | 'draussen' | '' (unbekannt)."""
+    n = norm(text)
+    d_aus = sum(1 for k in DRAUSSEN_KEYS if k in n)
+    d_in = sum(1 for k in DRINNEN_KEYS if k in n)
+    if d_aus > d_in:
+        return "draussen"
+    if d_in > d_aus:
+        return "drinnen"
+    return ""
+
+
+# WMO-Wettercode -> (Kurztext, Emoji)
+WMO = {
+    0: ("klar", "☀️"), 1: ("überwiegend klar", "🌤️"), 2: ("wechselnd bewölkt", "⛅"),
+    3: ("bewölkt", "☁️"), 45: ("Nebel", "🌫️"), 48: ("Nebel", "🌫️"),
+    51: ("Niesel", "🌦️"), 53: ("Niesel", "🌦️"), 55: ("Niesel", "🌦️"),
+    61: ("Regen", "🌧️"), 63: ("Regen", "🌧️"), 65: ("starker Regen", "🌧️"),
+    71: ("Schnee", "🌨️"), 73: ("Schnee", "🌨️"), 75: ("starker Schnee", "🌨️"),
+    80: ("Schauer", "🌦️"), 81: ("Schauer", "🌦️"), 82: ("starke Schauer", "⛈️"),
+    95: ("Gewitter", "⛈️"), 96: ("Gewitter", "⛈️"), 99: ("Gewitter", "⛈️"),
+}
+
+
+def hole_wetter(session, mp, start, ende, log):
+    """Holt die Tagesvorhersage (Open-Meteo) fuer den Zeitraum. Dict datum->wetter."""
+    url = (f"https://api.open-meteo.com/v1/forecast?latitude={mp['lat']}"
+           f"&longitude={mp['lon']}&daily=weathercode,temperature_2m_max,"
+           f"precipitation_probability_max&timezone=Europe%2FBerlin&forecast_days=16")
+    text, status, err = hole(session, url)
+    if err or not text:
+        log.append(f"[Wetter] Open-Meteo nicht erreichbar: {err}")
+        return {}
+    try:
+        d = json.loads(text).get("daily", {})
+        tab = {}
+        for i, tag in enumerate(d.get("time", [])):
+            code = d["weathercode"][i]
+            txt, emoji = WMO.get(code, ("", "🌡️"))
+            tab[tag] = {
+                "code": code, "text": txt, "emoji": emoji,
+                "tempMax": d["temperature_2m_max"][i],
+                "regenProzent": d["precipitation_probability_max"][i],
+            }
+        return tab
+    except Exception as exc:
+        log.append(f"[Wetter] Parsefehler: {exc}")
+        return {}
+
+
+# ----------------------------------------------------------------------
 # Quellen verarbeiten
 # ----------------------------------------------------------------------
 def make_event(titel, beschreibung, iso_datum, ort, quelle, mp, orte_tab, umkreis, iso_ende=None):
@@ -358,6 +419,8 @@ def make_event(titel, beschreibung, iso_datum, ort, quelle, mp, orte_tab, umkrei
         "stadt": stadt,
         "entfernungKm": entf,
         "kategorie": kat,
+        "drinnenDraussen": drinnen_draussen(volltext),
+        "wetter": None,
         "altersempfehlung": "",
         "kostenHinweis": "",
         "quelleName": quelle.get("name", ""),
@@ -535,6 +598,12 @@ def main():
     geprueft_ids = {e["id"] for e in geprueft}
     sicher = geprueft + [e for e in sicher if e["id"] not in geprueft_ids]
     sicher.sort(key=lambda e: e.get("datumStart") or "9999")
+
+    # Wetter fuer die sichtbaren Events anreichern (ein API-Call, Open-Meteo).
+    wetter_tab = hole_wetter(session, mp, start, ausblick_ende, log)
+    if wetter_tab:
+        for e in sicher:
+            e["wetter"] = wetter_tab.get(e.get("datumStart"))
 
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
     EVENTS_FILE.write_text(json.dumps(sicher, ensure_ascii=False, indent=2), encoding="utf-8")

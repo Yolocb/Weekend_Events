@@ -116,15 +116,25 @@ function karte(e){
   const kalenderBtn = e.datumStart
     ? `<button type="button" class="kalender-btn" data-id="${escape(e.id)}">📅 Zum Kalender</button>`
     : "";
+  // Indoor/Outdoor-Badge
+  const ort2 = e.drinnenDraussen==="draussen"
+    ? `<span class="badge badge-ort">🌳 Draußen</span>`
+    : (e.drinnenDraussen==="drinnen" ? `<span class="badge badge-ort">🏠 Drinnen</span>` : "");
+  // Wetter-Zeile (nur wenn Vorhersage vorhanden)
+  const w = e.wetter;
+  const wetter = w
+    ? `<p class="wetter">${w.emoji} ${escape(w.text||"")} · ${Math.round(w.tempMax)}°C · ${w.regenProzent}% Regen</p>`
+    : "";
   return `
     <li class="event ${ausblick?"ausblick":""}">
       <div class="kopfzeile">
         <span class="badge badge-kat">${escape(e.kategorie||"Sonstiges")}</span>
-        ${entf}${geprueft}
+        ${ort2}${entf}${geprueft}
       </div>
       <p class="datum">${escape(formatiereDatum(e.datumStart))}${uhrzeit}</p>
       <h3>${escape(e.titel)}</h3>
       <p class="ort">${escape(e.stadt||e.ort||"")}</p>
+      ${wetter}
       ${e.beschreibungKurz?`<p class="besch">${escape(e.beschreibungKurz)}</p>`:""}
       <p class="meta">${escape((e.kategorie||""))}${alter}${kosten}</p>
       <div class="fuss">

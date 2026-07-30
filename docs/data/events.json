@@ -11,13 +11,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Sonstiges",
+    "drinnenDraussen": "drinnen",
+    "wetter": {
+      "code": 80,
+      "text": "Schauer",
+      "emoji": "🌦️",
+      "tempMax": 39.4,
+      "regenProzent": 10
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.78,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "wochenende"
   },
   {
@@ -32,13 +40,21 @@
     "stadt": "Sinsheim",
     "entfernungKm": 0.0,
     "kategorie": "Workshop",
+    "drinnenDraussen": "",
+    "wetter": {
+      "code": 80,
+      "text": "Schauer",
+      "emoji": "🌦️",
+      "tempMax": 39.4,
+      "regenProzent": 10
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Sinsheim — Veranstaltungskalender",
     "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
     "relevanzScore": 0.68,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:23",
+    "lastChecked": "2026-07-30T14:14:21",
     "zeitraum": "wochenende"
   },
   {
@@ -53,13 +69,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Aufführung",
+    "drinnenDraussen": "drinnen",
+    "wetter": {
+      "code": 80,
+      "text": "Schauer",
+      "emoji": "🌦️",
+      "tempMax": 39.4,
+      "regenProzent": 10
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.53,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "wochenende"
   },
   {
@@ -74,13 +98,21 @@
     "stadt": "Neckarmünzplatz",
     "entfernungKm": null,
     "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": {
+      "code": 96,
+      "text": "Gewitter",
+      "emoji": "⛈️",
+      "tempMax": 32.9,
+      "regenProzent": 35
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.85,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "wochenende"
   },
   {
@@ -95,13 +127,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": {
+      "code": 96,
+      "text": "Gewitter",
+      "emoji": "⛈️",
+      "tempMax": 32.9,
+      "regenProzent": 35
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.63,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "wochenende"
   },
   {
@@ -116,13 +156,21 @@
     "stadt": "BELLA PARK (Haltestelle Stadtwerke)",
     "entfernungKm": null,
     "kategorie": "Markt",
+    "drinnenDraussen": "draussen",
+    "wetter": {
+      "code": 3,
+      "text": "bewölkt",
+      "emoji": "☁️",
+      "tempMax": 27.8,
+      "regenProzent": 53
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.75,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "wochenende"
   },
   {
@@ -137,13 +185,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Markt",
+    "drinnenDraussen": "draussen",
+    "wetter": {
+      "code": 3,
+      "text": "bewölkt",
+      "emoji": "☁️",
+      "tempMax": 27.8,
+      "regenProzent": 53
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.53,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "wochenende"
   },
   {
@@ -158,13 +214,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Workshop",
+    "drinnenDraussen": "",
+    "wetter": {
+      "code": 80,
+      "text": "Schauer",
+      "emoji": "🌦️",
+      "tempMax": 28.5,
+      "regenProzent": 20
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.93,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "ausblick"
   },
   {
@@ -179,13 +243,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Ferienprogramm",
+    "drinnenDraussen": "drinnen",
+    "wetter": {
+      "code": 45,
+      "text": "Nebel",
+      "emoji": "🌫️",
+      "tempMax": 30.9,
+      "regenProzent": 12
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.53,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "ausblick"
   },
   {
@@ -200,13 +272,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Sonstiges",
+    "drinnenDraussen": "drinnen",
+    "wetter": {
+      "code": 3,
+      "text": "bewölkt",
+      "emoji": "☁️",
+      "tempMax": 30.3,
+      "regenProzent": 25
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.78,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "ausblick"
   },
   {
@@ -221,13 +301,21 @@
     "stadt": "Theaterstraße",
     "entfernungKm": null,
     "kategorie": "Fest",
+    "drinnenDraussen": "",
+    "wetter": {
+      "code": 3,
+      "text": "bewölkt",
+      "emoji": "☁️",
+      "tempMax": 30.3,
+      "regenProzent": 25
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.6,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "ausblick"
   },
   {
@@ -242,13 +330,21 @@
     "stadt": "Heidelberg",
     "entfernungKm": 22.1,
     "kategorie": "Workshop",
+    "drinnenDraussen": "drinnen",
+    "wetter": {
+      "code": 53,
+      "text": "Niesel",
+      "emoji": "🌦️",
+      "tempMax": 30.3,
+      "regenProzent": 40
+    },
     "altersempfehlung": "",
     "kostenHinweis": "",
     "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.93,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T13:51:17",
+    "lastChecked": "2026-07-30T14:14:17",
     "zeitraum": "ausblick"
   }
 ]
