@@ -81,6 +81,30 @@
       "status": "aktiviert — dvv-Plattform, vevent/zmitem-Parsing"
     },
     {
+      "name": "Stadt Waibstadt — Veranstaltungen",
+      "ort": "Waibstadt",
+      "url": "https://www.waibstadt.de/freizeit-und-kultur/veranstaltungen",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 2,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "dvv-Plattform (zmitem-Layout); parse_vevents. Nur 5,7 km — sehr nah!",
+      "status": "aktiviert — naechstgelegene Gemeinde, dvv-Parsing"
+    },
+    {
+      "name": "Stadt Eppingen — Veranstaltungskalender",
+      "ort": "Eppingen",
+      "url": "https://www.eppingen.de/freizeit-kultur/veranstaltungskalender",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "kein dvv/vevent; HTML-Heuristik (Datum + Keyword). 13,1 km",
+      "status": "aktiviert — HTML-Heuristik"
+    },
+    {
       "name": "Stadt Heilbronn — Veranstaltungen",
       "ort": "Heilbronn",
       "url": "https://www.heilbronn.de/kultur-freizeit/veranstaltungen.html",
