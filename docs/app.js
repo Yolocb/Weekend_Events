@@ -113,6 +113,9 @@ function karte(e){
   const uhrzeit = e.uhrzeit ? ` · ${escape(e.uhrzeit)} Uhr` : "";
   const alter = e.altersempfehlung ? ` · ${escape(e.altersempfehlung)}` : "";
   const kosten = e.kostenHinweis ? ` · ${escape(e.kostenHinweis)}` : "";
+  const kalenderBtn = e.datumStart
+    ? `<button type="button" class="kalender-btn" data-id="${escape(e.id)}">📅 Zum Kalender</button>`
+    : "";
   return `
     <li class="event ${ausblick?"ausblick":""}">
       <div class="kopfzeile">
@@ -126,9 +129,61 @@ function karte(e){
       <p class="meta">${escape((e.kategorie||""))}${alter}${kosten}</p>
       <div class="fuss">
         <span class="quelle-name">Quelle: ${escape(e.quelleName||"unbekannt")}</span>
-        <a class="quelle-link" href="${escape(e.quelleUrl||"#")}" target="_blank" rel="noopener noreferrer">Zur Quelle &rarr;</a>
+        <div class="aktionen">
+          ${kalenderBtn}
+          <a class="quelle-link" href="${escape(e.quelleUrl||"#")}" target="_blank" rel="noopener noreferrer">Zur Quelle &rarr;</a>
+        </div>
       </div>
     </li>`;
+}
+
+// ---------- Kalender-Export (.ics) ----------
+
+/** ISO "2026-08-01" -> "20260801" fuer ICS-Ganztagstermine. */
+function icsDatum(iso){ return iso.replace(/-/g,""); }
+
+/** Escaped Sonderzeichen fuer ICS-Textfelder (RFC 5545). */
+function icsEscape(text){
+  return String(text==null?"":text)
+    .replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,")
+    .replace(/\r?\n/g,"\\n");
+}
+
+/** Baut einen ganztaegigen VEVENT-Kalendereintrag als .ics-Text. */
+function baueICS(e){
+  const start = icsDatum(e.datumStart);
+  // DTEND ist bei Ganztagsterminen exklusiv -> Tag nach datumEnd.
+  const endeBasis = e.datumEnd || e.datumStart;
+  const ed = new Date(endeBasis+"T00:00:00");
+  ed.setDate(ed.getDate()+1);
+  const ende = `${ed.getFullYear()}${String(ed.getMonth()+1).padStart(2,"0")}${String(ed.getDate()).padStart(2,"0")}`;
+  const ort = [e.veranstaltungsort, e.adresse, e.stadt, e.ort].filter(Boolean).join(", ");
+  const zeit = e.uhrzeit ? `Beginn: ${e.uhrzeit} Uhr` : "";
+  const besch = [e.beschreibungKurz, zeit, e.quelleUrl].filter(Boolean).join("\n\n");
+  return [
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Weekend-Events//DE","CALSCALE:GREGORIAN",
+    "BEGIN:VEVENT",
+    `UID:${e.id}@weekend-events`,
+    `DTSTART;VALUE=DATE:${start}`,
+    `DTEND;VALUE=DATE:${ende}`,
+    `SUMMARY:${icsEscape(e.titel)}`,
+    `LOCATION:${icsEscape(ort)}`,
+    `DESCRIPTION:${icsEscape(besch)}`,
+    "END:VEVENT","END:VCALENDAR",
+  ].join("\r\n");
+}
+
+/** Bietet die .ics-Datei eines Events als Download an. */
+function ladeKalenderHerunter(id){
+  const e = state.alle.find(x=>x.id===id);
+  if(!e || !e.datumStart) return;
+  const blob = new Blob([baueICS(e)], {type:"text/calendar;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `event-${e.datumStart}.ics`;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 function verdrahte(){
@@ -138,6 +193,11 @@ function verdrahte(){
     state.filter.maxEntfernung=Number(ev.target.value);
     el.entfernungWert.textContent=ev.target.value;
     rendern();
+  });
+  // Kalender-Buttons (per Delegation, da Karten dynamisch erzeugt werden).
+  document.addEventListener("click",ev=>{
+    const btn = ev.target.closest(".kalender-btn");
+    if(btn) ladeKalenderHerunter(btn.dataset.id);
   });
 }
 

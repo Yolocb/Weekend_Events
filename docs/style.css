@@ -81,6 +81,16 @@ body{
 /* Quellenname klar lesbar (dunkel, kräftig) */
 .quelle-name{font-size:.9rem;font-weight:600;color:var(--text)}
 
+/* Aktionen (Kalender-Button + Quelle-Link) */
+.aktionen{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+
+.kalender-btn{display:inline-flex;align-items:center;gap:.3rem;
+  background:#fff;color:var(--primary);font-family:inherit;font-weight:600;font-size:.9rem;
+  padding:.5rem .9rem;border:1.5px solid var(--primary);border-radius:8px;
+  cursor:pointer;white-space:nowrap;transition:background .15s,color .15s}
+.kalender-btn:hover,.kalender-btn:focus{background:var(--primary-hell)}
+.kalender-btn:focus{outline:2px solid var(--primary-dunkel);outline-offset:2px}
+
 /* Quelle-Link als klar lesbarer Button (Kontrast-Problem behoben) */
 .quelle-link{display:inline-flex;align-items:center;gap:.35rem;
   background:var(--primary);color:#fff !important;font-weight:600;font-size:.9rem;
