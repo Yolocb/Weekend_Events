@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/events.json docs/data/review.json
+          git add docs/data/events.json docs/data/review.json report.md
           if git diff --staged --quiet; then
             echo "Keine Aenderungen - nichts zu committen."
           else

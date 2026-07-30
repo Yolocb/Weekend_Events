@@ -50,6 +50,7 @@ ORTE_FILE = SCRIPT_DIR / "orte.json"
 DOCS_DATA = PROJECT_DIR / "docs" / "data"
 EVENTS_FILE = DOCS_DATA / "events.json"
 REVIEW_FILE = DOCS_DATA / "review.json"
+REPORT_FILE = PROJECT_DIR / "report.md"
 
 USER_AGENT = ("WeekendEventsBot/1.0 (privates Familienprojekt; woechentlicher "
               "Scan; Kontakt: bitte-nicht-blockieren@example.org)")
@@ -567,6 +568,52 @@ def lade_bestehende_geprueft(pfad):
         return []
 
 
+def schreibe_report(aktive, roh_pro_quelle, sicher, review, alte_ids,
+                    wetter_ok, log, start, we_ende, ausblick_ende):
+    """Schreibt einen Qualitaets-Report (report.md) fuer diesen Lauf."""
+    jetzt = datetime.now().strftime("%d.%m.%Y %H:%M")
+    neu = [e for e in sicher if e.get("id") not in alte_ids]
+    fehler = [z for z in log if "Fehler" in z or "JS-gerendert" in z or "nicht erreichbar" in z]
+
+    z = []
+    z.append(f"# Weekend-Events — Scan-Report")
+    z.append("")
+    z.append(f"**Lauf:** {jetzt}  ")
+    z.append(f"**Zeitfenster:** {start} bis {ausblick_ende} "
+             f"(Wochenende bis {we_ende})")
+    z.append("")
+    z.append(f"## Ergebnis")
+    z.append(f"- **{len(sicher)} Events** auf der Seite ({len(neu)} neu seit letztem Lauf)")
+    z.append(f"- **{len(review)} Treffer** in der Prüfliste (review.json)")
+    z.append(f"- **Wetter:** {'geladen (Open-Meteo)' if wetter_ok else 'nicht verfügbar'}")
+    z.append("")
+    z.append(f"## Rohtreffer pro Quelle")
+    z.append("")
+    z.append("| Quelle | Typ | Rohtreffer |")
+    z.append("|---|---|---|")
+    for q in aktive:
+        z.append(f"| {q['name']} | {q.get('typ','html')} | {roh_pro_quelle.get(q['name'], 0)} |")
+    z.append("")
+
+    if neu:
+        z.append(f"## Neue Events diese Woche")
+        for e in sorted(neu, key=lambda x: x.get("datumStart") or ""):
+            z.append(f"- {e.get('datumStart','?')} — {e.get('titel','')} "
+                     f"({e.get('stadt','')})")
+        z.append("")
+
+    if fehler:
+        z.append(f"## Hinweise / Fehler ({len(fehler)})")
+        for f in fehler:
+            z.append(f"- {f}")
+        z.append("")
+
+    z.append("---")
+    z.append("*Automatisch erzeugt vom Scan-Lauf. Angaben ohne Gewähr.*")
+    REPORT_FILE.write_text("\n".join(z) + "\n", encoding="utf-8")
+    print(f"Report geschrieben: {REPORT_FILE.name}")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Weekend-Events Scraper")
     ap.add_argument("--verbose", action="store_true")
@@ -585,6 +632,7 @@ def main():
     session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9"})
 
     alle, log = [], []
+    roh_pro_quelle = {}
     for q in aktive:
         typ = q.get("typ", "html")
         print(f"-> {q['name']} ({typ})")
@@ -595,6 +643,7 @@ def main():
         else:
             ev = verarbeite_html(session, q, mp, orte_tab, umkreis, log)
         print(f"   {len(ev)} Rohtreffer")
+        roh_pro_quelle[q["name"]] = len(ev)
         alle.extend(ev)
         time.sleep(POLITE_DELAY)
 
@@ -622,6 +671,14 @@ def main():
     sicher = geprueft + [e for e in sicher if e["id"] not in geprueft_ids]
     sicher.sort(key=lambda e: e.get("datumStart") or "9999")
 
+    # IDs der bisherigen Seite merken (fuer "neu vs. bekannt" im Report).
+    alte_ids = set()
+    if EVENTS_FILE.exists():
+        try:
+            alte_ids = {e.get("id") for e in json.loads(EVENTS_FILE.read_text(encoding="utf-8"))}
+        except (json.JSONDecodeError, OSError):
+            pass
+
     # Wetter fuer die sichtbaren Events anreichern (ein API-Call, Open-Meteo).
     wetter_tab = hole_wetter(session, mp, start, ausblick_ende, log)
     if wetter_tab:
@@ -631,6 +688,10 @@ def main():
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
     EVENTS_FILE.write_text(json.dumps(sicher, ensure_ascii=False, indent=2), encoding="utf-8")
     REVIEW_FILE.write_text(json.dumps(review, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Qualitaets-Report schreiben.
+    schreibe_report(aktive, roh_pro_quelle, sicher, review, alte_ids,
+                    bool(wetter_tab), log, start, we_ende, ausblick_ende)
 
     print("=" * 50)
     print(f"FERTIG: {len(sicher)} Events (Seite), {len(review)} zur Pruefung")
