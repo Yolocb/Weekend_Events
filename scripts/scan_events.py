@@ -509,16 +509,15 @@ def extrahiere_titel(el, blocktext):
 
 
 def parse_vevents(soup, quelle, mp, orte_tab, umkreis):
-    """Parst hCalendar/vevent-Mikroformat (dvv-Plattform u.a.).
+    """Parst die dvv-Plattform-Eventlisten (zwei Layout-Varianten).
 
-    Struktur: <li class="... vevent"> mit
-      <span class="dtstart" title="YYYY-MM-DD">...</span> und
-      <div class="summary"><a ...>Titel</a></div> (+ optional class="location").
-    Zuverlaessiger als Text-Heuristik, da Datum maschinenlesbar im title-Attribut.
-    Rueckgabe: Liste von Events (leer, wenn keine vevents vorhanden).
+    Variante A (hCalendar): <li class="vevent"> mit .dtstart/.summary/.location.
+    Variante B (neuer):     <div class="zmitem"> mit .dtstart/.titelzmtitel.
+    Gemeinsam: Datum maschinenlesbar in .dtstart title="YYYY-MM-DD".
+    Rueckgabe: Liste von Events (leer, wenn keine passenden Container).
     """
     events = []
-    for el in soup.select(".vevent"):
+    for el in soup.select(".vevent, .zmitem"):
         # Startdatum aus dtstart (title-Attribut bevorzugt, sonst Text).
         dt = el.select_one(".dtstart")
         iso = None
@@ -532,13 +531,15 @@ def parse_vevents(soup, quelle, mp, orte_tab, umkreis):
         # Enddatum optional.
         dte = el.select_one(".dtend")
         iso_ende = (dte.get("title") or "")[:10] if dte and dte.get("title") else iso
-        # Titel aus summary.
-        summ = el.select_one(".summary")
+        # Titel: summary (Variante A) oder titelzmtitel (Variante B), sonst Fallback.
+        summ = el.select_one(".summary, .titelzmtitel")
         titel = summ.get_text(" ", strip=True) if summ else el.get_text(" ", strip=True)[:120]
         # Ort aus location, falls vorhanden.
         loc = el.select_one(".location")
         ort = loc.get_text(" ", strip=True) if loc else ""
         besch = el.get_text(" ", strip=True)
+        if not titel.strip():
+            continue
         events.append(make_event(titel, besch, iso, ort, quelle, mp, orte_tab,
                                   umkreis, iso_ende=iso_ende or iso))
     return events

@@ -69,6 +69,18 @@
       "status": "aktiviert (Ausbaustufe 2) — breite regionale Abdeckung"
     },
     {
+      "name": "Stadt Neckargemünd — Veranstaltungen",
+      "ort": "Neckargemünd",
+      "url": "https://www.neckargemuend.de/start/erleben/veranstaltungen.html",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "dvv-Plattform (zmitem-Layout); wird von parse_vevents erkannt. 16,7 km",
+      "status": "aktiviert — dvv-Plattform, vevent/zmitem-Parsing"
+    },
+    {
       "name": "Stadt Heilbronn — Veranstaltungen",
       "ort": "Heilbronn",
       "url": "https://www.heilbronn.de/kultur-freizeit/veranstaltungen.html",
