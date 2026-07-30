@@ -105,6 +105,54 @@
       "status": "aktiviert — HTML-Heuristik"
     },
     {
+      "name": "Stadt Mosbach — Veranstaltungskalender",
+      "ort": "Mosbach",
+      "url": "https://www.mosbach.de/veranstaltungskalender",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "dvv-Plattform (zmitem__time-Layout); parse_vevents. 22,3 km. Viele Kinder-Events.",
+      "status": "aktiviert — dvv-Parsing (Figurentheater, Kids Day)"
+    },
+    {
+      "name": "Stadt Schwetzingen — Veranstaltungskalender",
+      "ort": "Schwetzingen",
+      "url": "https://www.schwetzingen.de/startseite/verwaltung/Veranstaltungskalender.html",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "dvv-Plattform (zmitem); parse_vevents. 26,7 km",
+      "status": "aktiviert — dvv-Parsing"
+    },
+    {
+      "name": "Gemeinde Angelbachtal — Veranstaltungen",
+      "ort": "Angelbachtal",
+      "url": "https://www.angelbachtal.de/freizeit-kultur/veranstaltungen",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 2,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "HTML-Heuristik. Nur 6,7 km — sehr nah!",
+      "status": "aktiviert — HTML-Heuristik (Ritterspiele/Markt)"
+    },
+    {
+      "name": "Stadt Östringen — Veranstaltungskalender",
+      "ort": "Östringen",
+      "url": "https://www.oestringen.de/freizeit-kultur/veranstaltungskalender",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "per Scoring gefiltert",
+      "icalHinweis": "HTML-Heuristik. 12,7 km. Buecherflohmarkt/Zirkus gefunden.",
+      "status": "aktiviert — HTML-Heuristik"
+    },
+    {
       "name": "Stadt Heilbronn — Veranstaltungen",
       "ort": "Heilbronn",
       "url": "https://www.heilbronn.de/kultur-freizeit/veranstaltungen.html",

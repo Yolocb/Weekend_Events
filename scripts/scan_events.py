@@ -509,39 +509,42 @@ def extrahiere_titel(el, blocktext):
 
 
 def parse_vevents(soup, quelle, mp, orte_tab, umkreis):
-    """Parst die dvv-Plattform-Eventlisten (zwei Layout-Varianten).
+    """Parst die dvv-Plattform-Eventlisten (mehrere Layout-Varianten).
 
     Variante A (hCalendar): <li class="vevent"> mit .dtstart/.summary/.location.
-    Variante B (neuer):     <div class="zmitem"> mit .dtstart/.titelzmtitel.
-    Gemeinsam: Datum maschinenlesbar in .dtstart title="YYYY-MM-DD".
+    Variante B: <div class="zmitem"> mit .dtstart/.titelzmtitel.
+    Variante C: <div class="zmitem"> mit .zmitem__time (Datum als Text) und
+                <a class="titel"> (z. B. Mosbach).
+    Datum kommt aus .dtstart title-Attribut, sonst aus Datums-Text im Container.
     Rueckgabe: Liste von Events (leer, wenn keine passenden Container).
     """
     events = []
     for el in soup.select(".vevent, .zmitem"):
-        # Startdatum aus dtstart (title-Attribut bevorzugt, sonst Text).
+        # Startdatum: 1) .dtstart title  2) .dtstart Text  3) .zmitem__time  4) Containertext
+        iso = iso_ende = None
         dt = el.select_one(".dtstart")
-        iso = None
-        if dt:
-            iso = dt.get("title") or None
-            if not iso:
-                iso, _ = parse_zeitraum(dt.get_text(" ", strip=True))
+        if dt and dt.get("title"):
+            iso = dt.get("title")[:10]
+            dte = el.select_one(".dtend")
+            iso_ende = (dte.get("title") or "")[:10] if dte and dte.get("title") else iso
+        else:
+            zeit_el = el.select_one(".zmitem__time, .dtstart, .datum")
+            zeittext = zeit_el.get_text(" ", strip=True) if zeit_el else el.get_text(" ", strip=True)
+            iso, iso_ende = parse_zeitraum(zeittext)
         if not iso or not re.match(r"\d{4}-\d{2}-\d{2}", iso):
             continue
         iso = iso[:10]
-        # Enddatum optional.
-        dte = el.select_one(".dtend")
-        iso_ende = (dte.get("title") or "")[:10] if dte and dte.get("title") else iso
-        # Titel: summary (Variante A) oder titelzmtitel (Variante B), sonst Fallback.
-        summ = el.select_one(".summary, .titelzmtitel")
-        titel = summ.get_text(" ", strip=True) if summ else el.get_text(" ", strip=True)[:120]
-        # Ort aus location, falls vorhanden.
+        iso_ende = (iso_ende or iso)[:10]
+        # Titel: summary / titelzmtitel / a.titel / erste Ueberschrift.
+        summ = el.select_one(".summary, .titelzmtitel, a.titel, h2, h3")
+        titel = summ.get_text(" ", strip=True) if summ else ""
+        if not titel.strip():
+            continue
         loc = el.select_one(".location")
         ort = loc.get_text(" ", strip=True) if loc else ""
         besch = el.get_text(" ", strip=True)
-        if not titel.strip():
-            continue
         events.append(make_event(titel, besch, iso, ort, quelle, mp, orte_tab,
-                                  umkreis, iso_ende=iso_ende or iso))
+                                  umkreis, iso_ende=iso_ende))
     return events
 
 
