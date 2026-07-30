@@ -1,9 +1,18 @@
 {
   "_meta": {
     "beschreibung": "Startquellen für Weekend-Events (Kinder-Events Region Sinsheim, ~30 km). Recherchiert 2026-07-30. Feed-Typen teils noch im Code zu verifizieren (siehe 'status').",
-    "mittelpunkt": {"ort": "Sinsheim", "plz": "74889", "lat": 49.252, "lon": 8.878},
+    "mittelpunkt": {
+      "ort": "Sinsheim",
+      "plz": "74889",
+      "lat": 49.252,
+      "lon": 8.878
+    },
     "umkreisKm": 30,
-    "startSet": ["Heidelberg", "Sinsheim", "Im Süden ganz oben"],
+    "startSet": [
+      "Heidelberg",
+      "Sinsheim",
+      "Im Süden ganz oben"
+    ],
     "hinweis": "Klein starten mit dem Start-Set (3 Quellen), dann erweitern. Viele kommunale Kalender sind JS-gerendert oder bieten iCal nur pro Event. Vor HTML-Scraping IMMER auf iCal/RSS prüfen. robots.txt/Nutzungsbedingungen je Quelle beachten."
   },
   "quellen": [
@@ -17,7 +26,8 @@
       "prioritaet": 1,
       "kinderfilter": "iCal-Sammelfeed (alle Kategorien); Kinderbezug wird ueber Scoring gefiltert",
       "icalHinweis": "Sammel-ICS verifiziert (~1,5 MB, sauberes VCALENDAR). Alternativer RSS: /site/Heidelberg2021/zmrss/833798/rss.xml",
-      "status": "iCal-Feed verifiziert und angebunden"
+      "status": "iCal-Feed verifiziert und angebunden",
+      "webUrl": "https://www.heidelberg.de/start/kultur/veranstaltungskalender.html"
     },
     {
       "name": "Stadt Sinsheim — Veranstaltungskalender",
@@ -54,7 +64,8 @@
       "prioritaet": 2,
       "kinderfilter": "Plattform hat Kategorie 'Kinder & Jugendliche'; Kinderbezug wird ueber Scoring gefiltert",
       "icalHinweis": "iCal-Sammelfeed verifiziert (gleiche Plattform wie Heidelberg, dvv-bw). RSS-Alternative: /site/Wiesloch2024/zmrss/3332558/rss.xml",
-      "status": "iCal-Feed verifiziert und angebunden (13,9 km)"
+      "status": "iCal-Feed verifiziert und angebunden (13,9 km)",
+      "webUrl": "https://www.wiesloch.de/veranstaltungskalender"
     },
     {
       "name": "Rhein-Neckar-Kreis — Veranstaltungskalender",

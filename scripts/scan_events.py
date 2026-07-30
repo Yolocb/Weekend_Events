@@ -50,6 +50,7 @@ ORTE_FILE = SCRIPT_DIR / "orte.json"
 DOCS_DATA = PROJECT_DIR / "docs" / "data"
 EVENTS_FILE = DOCS_DATA / "events.json"
 REVIEW_FILE = DOCS_DATA / "review.json"
+ARCHIV_FILE = DOCS_DATA / "archiv.json"
 REPORT_FILE = PROJECT_DIR / "report.md"
 
 # Realistischer Browser-User-Agent: Manche Kommunalseiten (z. B. dvv-Plattform)
@@ -451,7 +452,7 @@ def make_event(titel, beschreibung, iso_datum, ort, quelle, mp, orte_tab, umkrei
         "altersempfehlung": "",
         "kostenHinweis": "",
         "quelleName": quelle.get("name", ""),
-        "quelleUrl": quelle.get("url", ""),
+        "quelleUrl": quelle.get("webUrl") or quelle.get("url", ""),
         "relevanzScore": sc,
         "manuellGeprueft": False,
         "lastChecked": datetime.now().isoformat(timespec="seconds"),
@@ -662,10 +663,79 @@ def schreibe_report(aktive, roh_pro_quelle, sicher, review, alte_ids,
     print(f"Report geschrieben: {REPORT_FILE.name}")
 
 
+def _ist_vergangen(e, heute):
+    """True, wenn das Enddatum (oder Startdatum) eines Events vor heute liegt.
+    Events ohne Datum gelten nie als vergangen."""
+    ende = e.get("datumEnd") or e.get("datumStart")
+    if not ende:
+        return False
+    try:
+        return date.fromisoformat(ende[:10]) < heute
+    except (ValueError, TypeError):
+        return False
+
+
+def archiviere(events, heute=None):
+    """Haengt vergangene Events dedupliziert an archiv.json an.
+    Rueckgabe: Anzahl neu archivierter Events."""
+    heute = heute or date.today()
+    vergangen = [e for e in events if _ist_vergangen(e, heute)]
+    if not vergangen:
+        return 0
+    archiv = []
+    if ARCHIV_FILE.exists():
+        try:
+            archiv = json.loads(ARCHIV_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            archiv = []
+    bekannt = {e.get("id") for e in archiv}
+    neu = 0
+    for e in vergangen:
+        if e.get("id") not in bekannt:
+            archiv.append(e)
+            bekannt.add(e.get("id"))
+            neu += 1
+    archiv.sort(key=lambda e: e.get("datumStart") or "9999")
+    DOCS_DATA.mkdir(parents=True, exist_ok=True)
+    ARCHIV_FILE.write_text(json.dumps(archiv, ensure_ascii=False, indent=2), encoding="utf-8")
+    return neu
+
+
+def housekeeping(heute=None):
+    """Verschiebt vergangene Events aus events.json ins Archiv.
+
+    'Vergangen' = Enddatum (oder Startdatum) liegt vor heute. Betrifft ALLE Events
+    (auch manuellGeprueft), damit die Seite von selbst aktuell bleibt.
+    Rueckgabe: (aktuelle_events, anzahl_archiviert).
+    """
+    heute = heute or date.today()
+    if not EVENTS_FILE.exists():
+        return [], 0
+    try:
+        events = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return [], 0
+    n = archiviere(events, heute)
+    aktuelle = [e for e in events if not _ist_vergangen(e, heute)]
+    return aktuelle, n
+
+
 def main():
     ap = argparse.ArgumentParser(description="Weekend-Events Scraper")
     ap.add_argument("--verbose", action="store_true")
+    ap.add_argument("--housekeeping", action="store_true",
+                    help="Nur vergangene Events archivieren, keinen Scan durchfuehren.")
     args = ap.parse_args()
+
+    # Housekeeping-Modus: nur aufraeumen, kein Scan.
+    if args.housekeeping:
+        aktuelle, n = housekeeping()
+        if n:
+            DOCS_DATA.mkdir(parents=True, exist_ok=True)
+            EVENTS_FILE.write_text(json.dumps(aktuelle, ensure_ascii=False, indent=2),
+                                   encoding="utf-8")
+        print(f"Housekeeping: {n} vergangene Events archiviert, {len(aktuelle)} aktuell.")
+        return
 
     sources = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
     umkreis = sources["_meta"].get("umkreisKm", 30)
@@ -719,11 +789,15 @@ def main():
     sicher = geprueft + [e for e in sicher if e["id"] not in geprueft_ids]
     sicher.sort(key=lambda e: e.get("datumStart") or "9999")
 
-    # IDs der bisherigen Seite merken (fuer "neu vs. bekannt" im Report).
+    # IDs der bisherigen Seite merken (fuer "neu vs. bekannt" im Report)
+    # und vergangene Events der alten Seite ins Archiv retten (Housekeeping).
     alte_ids = set()
+    archiviert = 0
     if EVENTS_FILE.exists():
         try:
-            alte_ids = {e.get("id") for e in json.loads(EVENTS_FILE.read_text(encoding="utf-8"))}
+            alte_seite = json.loads(EVENTS_FILE.read_text(encoding="utf-8"))
+            alte_ids = {e.get("id") for e in alte_seite}
+            archiviert = archiviere(alte_seite)
         except (json.JSONDecodeError, OSError):
             pass
 
@@ -743,6 +817,8 @@ def main():
 
     print("=" * 50)
     print(f"FERTIG: {len(sicher)} Events (Seite), {len(review)} zur Pruefung")
+    if archiviert:
+        print(f"Archiviert: {archiviert} vergangene Events -> {ARCHIV_FILE.name}")
     if log:
         print("\nHinweise/Fehler:")
         for z in log:
