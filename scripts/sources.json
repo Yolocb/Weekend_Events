@@ -45,16 +45,28 @@
       "status": "verifiziert erreichbar (302 von deinefreizeit.com); deckt Region inkl. Sinsheim ab"
     },
     {
+      "name": "Stadt Wiesloch — Veranstaltungskalender",
+      "ort": "Wiesloch",
+      "url": "https://www.wiesloch.de/site/Wiesloch2024/zmservice/3332558/ical/ical.ics",
+      "typ": "ical",
+      "aktiv": true,
+      "startSet": false,
+      "prioritaet": 2,
+      "kinderfilter": "Plattform hat Kategorie 'Kinder & Jugendliche'; Kinderbezug wird ueber Scoring gefiltert",
+      "icalHinweis": "iCal-Sammelfeed verifiziert (gleiche Plattform wie Heidelberg, dvv-bw). RSS-Alternative: /site/Wiesloch2024/zmrss/3332558/rss.xml",
+      "status": "iCal-Feed verifiziert und angebunden (13,9 km)"
+    },
+    {
       "name": "Rhein-Neckar-Kreis — Veranstaltungskalender",
       "ort": "Rhein-Neckar-Kreis",
       "url": "https://www.rhein-neckar-kreis.de/start/aktuelles/veranstaltungskalender.html",
       "typ": "html",
-      "aktiv": false,
+      "aktiv": true,
       "startSet": false,
       "prioritaet": 3,
-      "kinderfilter": "unklar",
-      "icalHinweis": "verweist auf Freizeitportal; Feed offen",
-      "status": "Ausbaustufe 2"
+      "kinderfilter": "unklar; per Scoring gefiltert",
+      "icalHinweis": "HTML-Fallback; falls JS-gerendert, meldet der Scraper das im Log",
+      "status": "aktiviert (Ausbaustufe 2) — breite regionale Abdeckung"
     },
     {
       "name": "Stadt Heilbronn — Veranstaltungen",
