@@ -122,8 +122,9 @@ function karte(e){
     : (e.drinnenDraussen==="drinnen" ? `<span class="badge badge-ort">🏠 Drinnen</span>` : "");
   // Wetter-Zeile (nur wenn Vorhersage vorhanden)
   const w = e.wetter;
+  const regenTeil = (w && w.regenZeigen) ? ` · ${w.regenProzent}% Regen` : "";
   const wetter = w
-    ? `<p class="wetter">${w.emoji} ${escape(w.text||"")} · ${Math.round(w.tempMax)}°C · ${w.regenProzent}% Regen</p>`
+    ? `<p class="wetter">${w.emoji} ${escape(w.text||"")} · ${Math.round(w.tempMax)}°C${regenTeil}</p>`
     : "";
   return `
     <li class="event ${ausblick?"ausblick":""}">

@@ -371,6 +371,24 @@ WMO = {
     95: ("Gewitter", "⛈️"), 96: ("Gewitter", "⛈️"), 99: ("Gewitter", "⛈️"),
 }
 
+# Niederschlags-Codes (Niesel/Regen/Schauer/Gewitter) — an Regenwahrscheinlichkeit pruefen.
+NIEDERSCHLAG_CODES = {51, 53, 55, 61, 63, 65, 80, 81, 82, 95, 96, 99}
+
+
+def plausibilisiere_wetter(code, txt, emoji, temp, regen):
+    """Macht Wetterlage und Regenwahrscheinlichkeit widerspruchsfrei.
+
+    - Niederschlags-Code (z. B. 'Schauer') bei niedriger Regenwahrscheinlichkeit
+      (< 30 %) -> zu 'wechselnd bewoelkt' abschwaechen (kein 'Schauer bei 10 %').
+    - Nebel-Code bei warmer Temperatur (>= 20 °C) -> 'heiter/bewoelkt'
+      (Morgennebel loest sich auf; passt nicht zu 31 °C Tagesmax).
+    """
+    if code in NIEDERSCHLAG_CODES and (regen is None or regen < 30):
+        return "wechselnd bewölkt", "⛅"
+    if code in (45, 48) and temp is not None and temp >= 20:
+        return "heiter bis wolkig", "🌤️"
+    return txt, emoji
+
 
 def hole_wetter(session, mp, start, ende, log):
     """Holt die Tagesvorhersage (Open-Meteo) fuer den Zeitraum. Dict datum->wetter."""
@@ -386,11 +404,16 @@ def hole_wetter(session, mp, start, ende, log):
         tab = {}
         for i, tag in enumerate(d.get("time", [])):
             code = d["weathercode"][i]
+            temp = d["temperature_2m_max"][i]
+            regen = d["precipitation_probability_max"][i]
             txt, emoji = WMO.get(code, ("", "🌡️"))
+            txt, emoji = plausibilisiere_wetter(code, txt, emoji, temp, regen)
             tab[tag] = {
                 "code": code, "text": txt, "emoji": emoji,
-                "tempMax": d["temperature_2m_max"][i],
-                "regenProzent": d["precipitation_probability_max"][i],
+                "tempMax": temp,
+                "regenProzent": regen,
+                # Regen nur anzeigen, wenn er wirklich relevant ist (>= 20 %).
+                "regenZeigen": regen is not None and regen >= 20,
             }
         return tab
     except Exception as exc:

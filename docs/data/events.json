@@ -14,10 +14,11 @@
     "drinnenDraussen": "drinnen",
     "wetter": {
       "code": 80,
-      "text": "Schauer",
-      "emoji": "🌦️",
+      "text": "wechselnd bewölkt",
+      "emoji": "⛅",
       "tempMax": 39.4,
-      "regenProzent": 10
+      "regenProzent": 10,
+      "regenZeigen": false
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -25,7 +26,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.78,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "wochenende"
   },
   {
@@ -43,10 +44,11 @@
     "drinnenDraussen": "",
     "wetter": {
       "code": 80,
-      "text": "Schauer",
-      "emoji": "🌦️",
+      "text": "wechselnd bewölkt",
+      "emoji": "⛅",
       "tempMax": 39.4,
-      "regenProzent": 10
+      "regenProzent": 10,
+      "regenZeigen": false
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -54,7 +56,7 @@
     "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
     "relevanzScore": 0.68,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:21",
+    "lastChecked": "2026-07-30T14:27:33",
     "zeitraum": "wochenende"
   },
   {
@@ -72,10 +74,11 @@
     "drinnenDraussen": "drinnen",
     "wetter": {
       "code": 80,
-      "text": "Schauer",
-      "emoji": "🌦️",
+      "text": "wechselnd bewölkt",
+      "emoji": "⛅",
       "tempMax": 39.4,
-      "regenProzent": 10
+      "regenProzent": 10,
+      "regenZeigen": false
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -83,7 +86,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.53,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "wochenende"
   },
   {
@@ -104,7 +107,8 @@
       "text": "Gewitter",
       "emoji": "⛈️",
       "tempMax": 32.9,
-      "regenProzent": 35
+      "regenProzent": 35,
+      "regenZeigen": true
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -112,7 +116,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.85,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "wochenende"
   },
   {
@@ -133,7 +137,8 @@
       "text": "Gewitter",
       "emoji": "⛈️",
       "tempMax": 32.9,
-      "regenProzent": 35
+      "regenProzent": 35,
+      "regenZeigen": true
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -141,7 +146,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.63,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "wochenende"
   },
   {
@@ -162,7 +167,8 @@
       "text": "bewölkt",
       "emoji": "☁️",
       "tempMax": 27.8,
-      "regenProzent": 53
+      "regenProzent": 53,
+      "regenZeigen": true
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -170,7 +176,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.75,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "wochenende"
   },
   {
@@ -191,7 +197,8 @@
       "text": "bewölkt",
       "emoji": "☁️",
       "tempMax": 27.8,
-      "regenProzent": 53
+      "regenProzent": 53,
+      "regenZeigen": true
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -199,7 +206,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.53,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "wochenende"
   },
   {
@@ -217,10 +224,11 @@
     "drinnenDraussen": "",
     "wetter": {
       "code": 80,
-      "text": "Schauer",
-      "emoji": "🌦️",
+      "text": "wechselnd bewölkt",
+      "emoji": "⛅",
       "tempMax": 28.5,
-      "regenProzent": 20
+      "regenProzent": 20,
+      "regenZeigen": true
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -228,7 +236,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.93,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "ausblick"
   },
   {
@@ -246,10 +254,11 @@
     "drinnenDraussen": "drinnen",
     "wetter": {
       "code": 45,
-      "text": "Nebel",
-      "emoji": "🌫️",
+      "text": "heiter bis wolkig",
+      "emoji": "🌤️",
       "tempMax": 30.9,
-      "regenProzent": 12
+      "regenProzent": 12,
+      "regenZeigen": false
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -257,7 +266,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.53,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "ausblick"
   },
   {
@@ -278,7 +287,8 @@
       "text": "bewölkt",
       "emoji": "☁️",
       "tempMax": 30.3,
-      "regenProzent": 25
+      "regenProzent": 19,
+      "regenZeigen": false
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -286,7 +296,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.78,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "ausblick"
   },
   {
@@ -307,7 +317,8 @@
       "text": "bewölkt",
       "emoji": "☁️",
       "tempMax": 30.3,
-      "regenProzent": 25
+      "regenProzent": 19,
+      "regenZeigen": false
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -315,7 +326,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.6,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "ausblick"
   },
   {
@@ -336,7 +347,8 @@
       "text": "Niesel",
       "emoji": "🌦️",
       "tempMax": 30.3,
-      "regenProzent": 40
+      "regenProzent": 49,
+      "regenZeigen": true
     },
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -344,7 +356,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.93,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:14:17",
+    "lastChecked": "2026-07-30T14:27:30",
     "zeitraum": "ausblick"
   }
 ]
