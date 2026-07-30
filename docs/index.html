@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekend-Events — Besonderes für Kinder rund um Sinsheim</title>
+  <meta name="description" content="Besondere Kinder- und Familienveranstaltungen am Wochenende in der Region Sinsheim.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="kopf">
+    <div class="inhalt">
+      <h1>Weekend-Events</h1>
+      <p class="untertitel">Diese Woche besonders — für Kinder &amp; Familien rund um Sinsheim</p>
+    </div>
+  </header>
+
+  <main class="inhalt">
+    <!-- Filter -->
+    <section class="steuerung" aria-label="Filter">
+      <div class="filterzeile">
+        <div class="feld">
+          <label for="kategorie">Kategorie</label>
+          <select id="kategorie">
+            <option value="alle">Alle Kategorien</option>
+          </select>
+        </div>
+        <div class="feld">
+          <label for="entfernung">Max. Entfernung: <span id="entfernung-wert">30</span> km</label>
+          <input type="range" id="entfernung" min="5" max="30" step="5" value="30">
+        </div>
+        <div class="feld">
+          <label for="zeitraum">Zeitraum</label>
+          <select id="zeitraum">
+            <option value="alle">Wochenende + Ausblick</option>
+            <option value="wochenende">Nur dieses Wochenende</option>
+            <option value="ausblick">Nur Ausblick</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <p id="zaehler" class="zaehler" aria-live="polite"></p>
+
+    <div id="ladezustand" class="zustand" hidden><p>Events werden geladen …</p></div>
+    <div id="fehlerzustand" class="zustand fehler" hidden>
+      <p><strong>Die Events konnten nicht geladen werden.</strong></p>
+      <p id="fehlertext"></p>
+    </div>
+    <div id="leerzustand" class="zustand" hidden>
+      <p><strong>Diese Woche keine besonderen Events gefunden.</strong></p>
+      <p>Schau nächstes Wochenende wieder vorbei — oder passe die Filter an.</p>
+    </div>
+
+    <!-- Abschnitte -->
+    <section id="abschnitt-wochenende" hidden>
+      <h2 class="rubrik">Dieses Wochenende</h2>
+      <ul id="liste-wochenende" class="eventliste"></ul>
+    </section>
+    <section id="abschnitt-ausblick" hidden>
+      <h2 class="rubrik">Ausblick — nächste Tage</h2>
+      <ul id="liste-ausblick" class="eventliste"></ul>
+    </section>
+  </main>
+
+  <footer class="seiten-fuss">
+    <div class="inhalt">
+      <p>Angaben ohne Gewähr — bitte den Termin über den Quellen-Link beim Veranstalter prüfen.</p>
+      <p class="stand">Datenstand: <span id="datenstand">–</span></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

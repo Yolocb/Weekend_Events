@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "beschreibung": "Startquellen für Weekend-Events (Kinder-Events Region Sinsheim, ~30 km). Recherchiert 2026-07-30. Feed-Typen teils noch im Code zu verifizieren (siehe 'status').",
+    "mittelpunkt": {"ort": "Sinsheim", "plz": "74889", "lat": 49.252, "lon": 8.878},
+    "umkreisKm": 30,
+    "startSet": ["Heidelberg", "Sinsheim", "Im Süden ganz oben"],
+    "hinweis": "Klein starten mit dem Start-Set (3 Quellen), dann erweitern. Viele kommunale Kalender sind JS-gerendert oder bieten iCal nur pro Event. Vor HTML-Scraping IMMER auf iCal/RSS prüfen. robots.txt/Nutzungsbedingungen je Quelle beachten."
+  },
+  "quellen": [
+    {
+      "name": "Stadt Heidelberg — Veranstaltungskalender",
+      "ort": "Heidelberg",
+      "url": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
+      "typ": "ical",
+      "aktiv": true,
+      "startSet": true,
+      "prioritaet": 1,
+      "kinderfilter": "iCal-Sammelfeed (alle Kategorien); Kinderbezug wird ueber Scoring gefiltert",
+      "icalHinweis": "Sammel-ICS verifiziert (~1,5 MB, sauberes VCALENDAR). Alternativer RSS: /site/Heidelberg2021/zmrss/833798/rss.xml",
+      "status": "iCal-Feed verifiziert und angebunden"
+    },
+    {
+      "name": "Stadt Sinsheim — Veranstaltungskalender",
+      "ort": "Sinsheim",
+      "url": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": true,
+      "prioritaet": 1,
+      "kinderfilter": "kein Kinder-/Familienfilter; Kategorien u.a. 'Fest', 'Aktivität', 'Musikschule' — per Keyword filtern",
+      "paginierung": "/seite-2, /seite-3 … (rund 66 Seiten); serverseitiges HTML, gut scrapebar",
+      "icalHinweis": "KEIN iCal/RSS gefunden → HTML-Scraping mit Paginierung",
+      "status": "verifiziert erreichbar; kein Feed; Heimatort — wichtigste Quelle"
+    },
+    {
+      "name": "Im Süden ganz oben (Tourismus Rhein-Neckar / deinefreizeit)",
+      "ort": "Region Rhein-Neckar",
+      "url": "https://www.imsuedenganzoben.de/rhein-neckar/de",
+      "typ": "html",
+      "aktiv": true,
+      "startSet": true,
+      "prioritaet": 2,
+      "kinderfilter": "Familienkategorien vorhanden",
+      "icalHinweis": "Feed offen; Kalender-Unterpfad im Code ermitteln (geratener /erleben/veranstaltungen-Pfad war 404)",
+      "status": "verifiziert erreichbar (302 von deinefreizeit.com); deckt Region inkl. Sinsheim ab"
+    },
+    {
+      "name": "Rhein-Neckar-Kreis — Veranstaltungskalender",
+      "ort": "Rhein-Neckar-Kreis",
+      "url": "https://www.rhein-neckar-kreis.de/start/aktuelles/veranstaltungskalender.html",
+      "typ": "html",
+      "aktiv": false,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "unklar",
+      "icalHinweis": "verweist auf Freizeitportal; Feed offen",
+      "status": "Ausbaustufe 2"
+    },
+    {
+      "name": "Stadt Heilbronn — Veranstaltungen",
+      "ort": "Heilbronn",
+      "url": "https://www.heilbronn.de/kultur-freizeit/veranstaltungen.html",
+      "typ": "html",
+      "aktiv": false,
+      "startSet": false,
+      "prioritaet": 3,
+      "kinderfilter": "unklar",
+      "icalHinweis": "Feed/Filter offen",
+      "status": "Ausbaustufe 2 (am Rand des 30-km-Umkreises)"
+    },
+    {
+      "name": "Bruchsal — Veranstaltungen (zu ergänzen)",
+      "ort": "Bruchsal",
+      "url": "https://www.bruchsal.de/",
+      "typ": "html",
+      "aktiv": false,
+      "startSet": false,
+      "prioritaet": 4,
+      "kinderfilter": "unklar",
+      "icalHinweis": "Kalender-URL + Feed noch recherchieren",
+      "status": "Platzhalter — beim Ausbau prüfen"
+    },
+    {
+      "name": "Wiesloch / Walldorf — Veranstaltungen (zu ergänzen)",
+      "ort": "Wiesloch",
+      "url": "https://www.wiesloch.de/",
+      "typ": "html",
+      "aktiv": false,
+      "startSet": false,
+      "prioritaet": 4,
+      "kinderfilter": "unklar",
+      "icalHinweis": "Kalender-URL + Feed noch recherchieren",
+      "status": "Platzhalter — beim Ausbau prüfen"
+    }
+  ]
+}

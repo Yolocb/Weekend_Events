@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "beschreibung": "Orte→Koordinaten für die Entfernungsberechnung (Haversine-Luftlinie zu Sinsheim). Für Weekend-Events. Stand 2026-07-30.",
+    "mittelpunkt": {"ort": "Sinsheim", "plz": "74889", "lat": 49.2523, "lon": 8.8784},
+    "umkreisKm": 30,
+    "hinweis": "entfernungKm ist die vorberechnete Luftlinie zu Sinsheim (Haversine). Der Scraper kann diese Tabelle direkt nutzen; für unbekannte Orte per Nominatim/OSM geocoden (mit Cache + Rate-Limit) und hier ergänzen. Orte mit imUmkreis=false liegen über 30 km und sollten normal herausgefiltert werden."
+  },
+  "orte": [
+    {"ort": "Sinsheim", "lat": 49.2523, "lon": 8.8784, "entfernungKm": 0.0, "imUmkreis": true},
+    {"ort": "Sinsheim-Hoffenheim", "lat": 49.2380, "lon": 8.8880, "entfernungKm": 1.7, "imUmkreis": true},
+    {"ort": "Waibstadt", "lat": 49.2960, "lon": 8.9200, "entfernungKm": 5.7, "imUmkreis": true},
+    {"ort": "Zuzenhausen", "lat": 49.2830, "lon": 8.8100, "entfernungKm": 6.0, "imUmkreis": true},
+    {"ort": "Angelbachtal", "lat": 49.2340, "lon": 8.7900, "entfernungKm": 6.7, "imUmkreis": true},
+    {"ort": "Neckarbischofsheim", "lat": 49.2960, "lon": 8.9660, "entfernungKm": 8.0, "imUmkreis": true},
+    {"ort": "Meckesheim", "lat": 49.3230, "lon": 8.8100, "entfernungKm": 9.3, "imUmkreis": true},
+    {"ort": "Mühlhausen", "lat": 49.2470, "lon": 8.7480, "entfernungKm": 9.5, "imUmkreis": true},
+    {"ort": "Bad Rappenau", "lat": 49.2400, "lon": 9.0100, "entfernungKm": 9.7, "imUmkreis": true},
+    {"ort": "Östringen", "lat": 49.2170, "lon": 8.7120, "entfernungKm": 12.7, "imUmkreis": true},
+    {"ort": "Eppingen", "lat": 49.1367, "lon": 8.9113, "entfernungKm": 13.1, "imUmkreis": true},
+    {"ort": "Bammental", "lat": 49.3560, "lon": 8.7770, "entfernungKm": 13.7, "imUmkreis": true},
+    {"ort": "Wiesloch", "lat": 49.2946, "lon": 8.6987, "entfernungKm": 13.9, "imUmkreis": true},
+    {"ort": "Neckargemünd", "lat": 49.3930, "lon": 8.7960, "entfernungKm": 16.7, "imUmkreis": true},
+    {"ort": "Leimen", "lat": 49.3470, "lon": 8.6910, "entfernungKm": 17.2, "imUmkreis": true},
+    {"ort": "Walldorf", "lat": 49.3050, "lon": 8.6428, "entfernungKm": 18.1, "imUmkreis": true},
+    {"ort": "Heidelberg", "lat": 49.3988, "lon": 8.6724, "entfernungKm": 22.1, "imUmkreis": true},
+    {"ort": "Mosbach", "lat": 49.3530, "lon": 9.1440, "entfernungKm": 22.3, "imUmkreis": true},
+    {"ort": "Bruchsal", "lat": 49.1244, "lon": 8.5982, "entfernungKm": 24.8, "imUmkreis": true},
+    {"ort": "Hockenheim", "lat": 49.3220, "lon": 8.5490, "entfernungKm": 25.1, "imUmkreis": true},
+    {"ort": "Schwetzingen", "lat": 49.3830, "lon": 8.5700, "entfernungKm": 26.7, "imUmkreis": true},
+    {"ort": "Heilbronn", "lat": 49.1427, "lon": 9.2109, "entfernungKm": 27.1, "imUmkreis": true},
+    {"ort": "Speyer", "lat": 49.3170, "lon": 8.4310, "entfernungKm": 33.2, "imUmkreis": false},
+    {"ort": "Weinheim", "lat": 49.5480, "lon": 8.6690, "entfernungKm": 36.2, "imUmkreis": false}
+  ]
+}

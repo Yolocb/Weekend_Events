@@ -1,0 +1,43 @@
+name: Woechentlicher Event-Scan
+
+# Sucht einmal pro Woche (Donnerstag) besondere Kinder-Events in der Region
+# Sinsheim und committet die aktualisierte docs/data/events.json automatisch.
+
+on:
+  schedule:
+    # Donnerstag 05:17 UTC (krumme Minute, um Lastspitzen zu vermeiden).
+    - cron: "17 5 * * 4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r scripts/requirements.txt
+
+      - name: Event-Scan ausfuehren
+        run: python scripts/scan_events.py --verbose
+
+      - name: Aenderungen committen (nur wenn vorhanden)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/events.json docs/data/review.json
+          if git diff --staged --quiet; then
+            echo "Keine Aenderungen - nichts zu committen."
+          else
+            git commit -m "Automatischer Event-Scan ($(date -u +%Y-%m-%d))"
+            git push
+          fi
