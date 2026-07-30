@@ -19,7 +19,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.45,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -42,7 +42,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.45,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -65,7 +65,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.45,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -88,7 +88,122 @@
     "quelleUrl": "https://www.imsuedenganzoben.de/rhein-neckar/de",
     "relevanzScore": 0.45,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:35",
+    "lastChecked": "2026-07-30T19:24:57",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "db0d43bb8917",
+    "titel": "KreaPicknick - kreatives Picknick",
+    "beschreibungKurz": "Vorträge/Workshops/Präsentationen Donnerstag, 30.07.2026 17:00 - 19:00 Uhr KreaPicknick - kreatives Picknick Kreativ Eck",
+    "datumStart": "2026-07-30",
+    "datumEnd": "2026-07-30",
+    "uhrzeit": "",
+    "ort": "Kreativ Eck",
+    "adresse": "",
+    "stadt": "Kreativ Eck",
+    "entfernungKm": null,
+    "kategorie": "Workshop",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.45,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "9b3c2848bb36",
+    "titel": "Folk am Neckar - FaN",
+    "beschreibungKurz": "Feste/Festivals Mosbacher Sommer Freitag, 31.07.2026 bis Samstag, 01.08.2026 Folk am Neckar - FaN Burggraben Neckarelz",
+    "datumStart": "2026-07-31",
+    "datumEnd": "2026-07-31",
+    "uhrzeit": "",
+    "ort": "Burggraben Neckarelz",
+    "adresse": "",
+    "stadt": "Burggraben Neckarelz",
+    "entfernungKm": null,
+    "kategorie": "Fest",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.45,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "1caa170b7c8c",
+    "titel": "Limo & Light im Kreativ Eck",
+    "beschreibungKurz": "Sonstige Vorträge/Workshops/Präsentationen Dienstag, 04.08.2026 18:30 - 20:30 Uhr Limo & Light im Kreativ Eck Kreativ Eck",
+    "datumStart": "2026-08-04",
+    "datumEnd": "2026-08-04",
+    "uhrzeit": "",
+    "ort": "Kreativ Eck",
+    "adresse": "",
+    "stadt": "Kreativ Eck",
+    "entfernungKm": null,
+    "kategorie": "Workshop",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.45,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "10198396515a",
+    "titel": "Bernd Lafrenz: König Richard III Shakespeare-Solo-Komödie",
+    "beschreibungKurz": "Mosbacher Sommer Theater/Kabarett/Poetry Slam Donnerstag, 06.08.2026 20:00 Uhr Bernd Lafrenz: König Richard III Shakespeare-Solo-Komödie Hospitalhof",
+    "datumStart": "2026-08-06",
+    "datumEnd": "2026-08-06",
+    "uhrzeit": "",
+    "ort": "Hospitalhof",
+    "adresse": "",
+    "stadt": "Hospitalhof",
+    "entfernungKm": null,
+    "kategorie": "Aufführung",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.45,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "3a4031bd620f",
+    "titel": "Musik zur Marktzeit",
+    "beschreibungKurz": "Musikveranstaltungen/Konzerte Samstag, 08.08.2026 10:30 Uhr Musik zur Marktzeit Stiftskirche",
+    "datumStart": "2026-08-08",
+    "datumEnd": "2026-08-08",
+    "uhrzeit": "",
+    "ort": "Stiftskirche",
+    "adresse": "",
+    "stadt": "Stiftskirche",
+    "entfernungKm": null,
+    "kategorie": "Markt",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.45,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
     "zeitraum": "ausblick"
   },
   {
@@ -111,7 +226,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.43,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -134,7 +249,7 @@
     "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
     "relevanzScore": 0.43,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:33",
+    "lastChecked": "2026-07-30T19:24:55",
     "zeitraum": "wochenende"
   },
   {
@@ -157,7 +272,7 @@
     "quelleUrl": "https://www.wiesloch.de/site/Wiesloch2024/zmservice/3332558/ical/ical.ics",
     "relevanzScore": 0.43,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:36",
+    "lastChecked": "2026-07-30T19:24:59",
     "zeitraum": "wochenende"
   },
   {
@@ -180,7 +295,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -203,7 +318,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -226,7 +341,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -249,7 +364,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -272,7 +387,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -295,7 +410,30 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "35256e29a86a",
+    "titel": "Jane Austen und das Chaos in meinem Leben | Ciné Club des dfk | OPEN AIR",
+    "beschreibungKurz": "Frankreich 2024 | Regie: Laura Piani | 94 min. | Camille Rutherford, Pablo Pauly, Charlie Anson, Annabelle Lengronne, Liz Crowther | frz. Original mit deutschen Untertiteln | FSK: ohne Altersbeschränkung. Agathe, jung, hübsch und hoffnungsl",
+    "datumStart": "2026-08-06",
+    "datumEnd": "2026-08-06",
+    "uhrzeit": "",
+    "ort": "Marlene-Dietrich-Platz, Marlene-Dietrich-Platz 3, 69126 Heidelberg",
+    "adresse": "",
+    "stadt": "Heidelberg",
+    "entfernungKm": 22.1,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
+    "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -318,7 +456,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -341,7 +479,30 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "4f5a9679124c",
+    "titel": "Robot Dreams | WoAndersKino | Dezernat 16",
+    "beschreibungKurz": "Spanien, Frankreich 2023 | Regie: Pablo Berger | 102 min. | ohne Dialog | Praedikat: besonders wertvoll | FSK: ohne Altersbeschränkung. Im Szeneviertel East Village brummt, hupt und jault das Leben. Aber der einsame Dog vertreibt sich die Z",
+    "datumStart": "2026-08-07",
+    "datumEnd": "2026-08-07",
+    "uhrzeit": "",
+    "ort": "Dezernat #16, Emil-Maier-Straße 16, 69115 HEIDELBERG",
+    "adresse": "",
+    "stadt": "Heidelberg",
+    "entfernungKm": 22.1,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
+    "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -364,7 +525,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -387,7 +548,7 @@
     "quelleUrl": "https://www.wiesloch.de/site/Wiesloch2024/zmservice/3332558/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:36",
+    "lastChecked": "2026-07-30T19:24:59",
     "zeitraum": "wochenende"
   },
   {
@@ -410,7 +571,145 @@
     "quelleUrl": "https://www.wiesloch.de/site/Wiesloch2024/zmservice/3332558/ical/ical.ics",
     "relevanzScore": 0.38,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:36",
+    "lastChecked": "2026-07-30T19:24:59",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "b4d67fbbd286",
+    "titel": "Sa , 01.08.2026 , 19:30 Uhr",
+    "beschreibungKurz": "Sa , 01.08.2026 , 19:30 Uhr Burg-Serenade \"Ein Sommertag\" Veranstaltungsort Burgbühne Dilsberg Burghofweg 69151 Neckargemünd / Dilsberg OpenStreetMap Fahrplanauskunft Kategorie Konzert Mehr …",
+    "datumStart": "2026-08-01",
+    "datumEnd": "2026-08-01",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Neckargemünd",
+    "entfernungKm": 16.7,
+    "kategorie": "Aufführung",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Neckargemünd — Veranstaltungen",
+    "quelleUrl": "https://www.neckargemuend.de/start/erleben/veranstaltungen.html",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:05",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "5a5450945864",
+    "titel": "Sa , 01.08.2026",
+    "beschreibungKurz": "Sa , 01.08.2026 Burgserenade Veranstalter Dilsberger Kantorei Kategorie Stadtteil: Dilsberg Mehr …",
+    "datumStart": "2026-08-01",
+    "datumEnd": "2026-08-01",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Neckargemünd",
+    "entfernungKm": 16.7,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Neckargemünd — Veranstaltungen",
+    "quelleUrl": "https://www.neckargemuend.de/start/erleben/veranstaltungen.html",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:05",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "1635754a77bf",
+    "titel": "So , 02.08.2026",
+    "beschreibungKurz": "So , 02.08.2026 Kirchencafe Kategorie Stadtteil: Dilsberg Mehr …",
+    "datumStart": "2026-08-02",
+    "datumEnd": "2026-08-02",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Neckargemünd",
+    "entfernungKm": 16.7,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "drinnen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Neckargemünd — Veranstaltungen",
+    "quelleUrl": "https://www.neckargemuend.de/start/erleben/veranstaltungen.html",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:05",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "63b10381be92",
+    "titel": "Sa , 08.08.2026",
+    "beschreibungKurz": "Sa , 08.08.2026 Dilsberger Groove Night Veranstalter Dilsberg aktiv Kategorie Stadtteil: Dilsberg Mehr …",
+    "datumStart": "2026-08-08",
+    "datumEnd": "2026-08-08",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Neckargemünd",
+    "entfernungKm": 16.7,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Neckargemünd — Veranstaltungen",
+    "quelleUrl": "https://www.neckargemuend.de/start/erleben/veranstaltungen.html",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:05",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "5009432eab25",
+    "titel": "Oldtimertag in der Innenstadt",
+    "beschreibungKurz": "Sonstige Sonntag, 09.08.2026 Oldtimertag in der Innenstadt Mosbach",
+    "datumStart": "2026-08-09",
+    "datumEnd": "2026-08-09",
+    "uhrzeit": "",
+    "ort": "Mosbach",
+    "adresse": "",
+    "stadt": "Mosbach",
+    "entfernungKm": 22.3,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "f9dec39ce385",
+    "titel": "Monstersteine bemalen",
+    "beschreibungKurz": "Monstersteine bemalen Dienstag, 04.08.2026 9:00 - 14:00 Veranstalter Stadtbibliothek Schwetzingen Invalidenkaserne - Eingang Kronenstraße 68723 Schwetzingen OpenStreetMap Fahrplanauskunft stadtbibliothek.schwetzingen.de/start.html E-Mail st",
+    "datumStart": "2026-08-04",
+    "datumEnd": "2026-08-04",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Schwetzingen",
+    "entfernungKm": 26.7,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Schwetzingen — Veranstaltungskalender",
+    "quelleUrl": "https://www.schwetzingen.de/startseite/verwaltung/Veranstaltungskalender.html",
+    "relevanzScore": 0.38,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:21",
     "zeitraum": "ausblick"
   },
   {
@@ -433,7 +732,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.3,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -456,7 +755,30 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.3,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "31e0f59a45bc",
+    "titel": "Midnight Madness Open Air@Carousel | Überraschnugsfilm",
+    "beschreibungKurz": "Original mit deutschen Untertiteln | FSK: 16. Wir gehen in die zweite Runde Midnight Madness Open Air, mit der wohl unkonventionellsten Maske unserer „3 Masken – 90's Filme“. Peak HollyWOO! Und keine Sorge: Hier regiert absolute 90's Madnes",
+    "datumStart": "2026-08-05",
+    "datumEnd": "2026-08-05",
+    "uhrzeit": "",
+    "ort": "Carousel im alten Autohaus, Hebelstraße 7",
+    "adresse": "",
+    "stadt": "Carousel im alten Autohaus, Hebelstraße 7",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Heidelberg — Veranstaltungskalender",
+    "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
+    "relevanzScore": 0.3,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -479,8 +801,100 @@
     "quelleUrl": "https://www.wiesloch.de/site/Wiesloch2024/zmservice/3332558/ical/ical.ics",
     "relevanzScore": 0.3,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:36",
+    "lastChecked": "2026-07-30T19:24:59",
     "zeitraum": "wochenende"
+  },
+  {
+    "id": "c20119be0093",
+    "titel": "\"Spazier im Quartier\" - Stadtteilspaziergänge",
+    "beschreibungKurz": "Sonstige Samstag, 01.08.2026 11:00 Uhr \"Spazier im Quartier\" - Stadtteilspaziergänge Lohrbach",
+    "datumStart": "2026-08-01",
+    "datumEnd": "2026-08-01",
+    "uhrzeit": "",
+    "ort": "Lohrbach",
+    "adresse": "",
+    "stadt": "Lohrbach",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.3,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "b4130edc617c",
+    "titel": "Modell der Mosbacher Synagoge",
+    "beschreibungKurz": "Ausstellungen Samstag, 01.08.2026 Modell der Mosbacher Synagoge Stadtmuseum",
+    "datumStart": "2026-08-01",
+    "datumEnd": "2026-08-01",
+    "uhrzeit": "",
+    "ort": "Stadtmuseum",
+    "adresse": "",
+    "stadt": "Stadtmuseum",
+    "entfernungKm": null,
+    "kategorie": "Ausstellung",
+    "drinnenDraussen": "drinnen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.3,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "7b14f280aca1",
+    "titel": "Gin & Create",
+    "beschreibungKurz": "Sonstige Freitag, 07.08.2026 18:30 - 20:30 Uhr Gin & Create Kreativ Eck",
+    "datumStart": "2026-08-07",
+    "datumEnd": "2026-08-07",
+    "uhrzeit": "",
+    "ort": "Kreativ Eck",
+    "adresse": "",
+    "stadt": "Kreativ Eck",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.3,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "2d431b7dd874",
+    "titel": "Dudelsackkonzert",
+    "beschreibungKurz": "Musikveranstaltungen/Konzerte Samstag, 08.08.2026 19:30 - 20:30 Uhr Dudelsackkonzert Bildungshaus",
+    "datumStart": "2026-08-08",
+    "datumEnd": "2026-08-08",
+    "uhrzeit": "",
+    "ort": "Bildungshaus",
+    "adresse": "",
+    "stadt": "Bildungshaus",
+    "entfernungKm": null,
+    "kategorie": "Aufführung",
+    "drinnenDraussen": "drinnen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.3,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "ausblick"
   },
   {
     "id": "66ba1cfb55e9",
@@ -502,7 +916,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.28,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -525,7 +939,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.28,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -548,7 +962,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.28,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -571,7 +985,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.2,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -594,7 +1008,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.2,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -617,7 +1031,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.2,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -640,7 +1054,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.2,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -663,7 +1077,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.2,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -686,7 +1100,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.2,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -709,7 +1123,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -732,7 +1146,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -755,7 +1169,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -778,7 +1192,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -801,7 +1215,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -824,7 +1238,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -847,7 +1261,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -870,7 +1284,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -893,7 +1307,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -916,7 +1330,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -939,7 +1353,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -962,53 +1376,53 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
-    "id": "7a023b718f9c",
-    "titel": "Repair Café im SAM auf dem Burgplatz in Sinsheim",
-    "beschreibungKurz": "Repair Café im SAM auf dem Burgplatz in Sinsheim Kernstadt Aktivität Datum 30.07.2026 Uhrzeit 16:00 Uhr bis 19:00 Uhr Veranstalter SAM und DreamCenter icon.place.event SAM Café Burggasse 26 74889 Sinsheim Telefonnummer 07261 4070408 Icon E-",
-    "datumStart": "2026-07-30",
-    "datumEnd": "2026-07-30",
+    "id": "a0fb07c0199a",
+    "titel": "So , 09.08.2026",
+    "beschreibungKurz": "So , 09.08.2026 Öffentliche Stadtführungen durch Neckargemünd: \"Stadt am Fluss\" Veranstalter Kulturverein Neckargemünd e.V. Batzenhäuselweg 17 69151 Neckargemünd OpenStreetMap Fahrplanauskunft www.kulturverein-neckargemuend.de E-Mail vorsta",
+    "datumStart": "2026-08-09",
+    "datumEnd": "2026-08-09",
     "uhrzeit": "",
     "ort": "",
     "adresse": "",
-    "stadt": "Sinsheim",
-    "entfernungKm": 0.0,
-    "kategorie": "Fest",
+    "stadt": "Neckargemünd",
+    "entfernungKm": 16.7,
+    "kategorie": "Markt",
     "drinnenDraussen": "draussen",
     "wetter": null,
     "altersempfehlung": "",
     "kostenHinweis": "",
-    "quelleName": "Stadt Sinsheim — Veranstaltungskalender",
-    "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
+    "quelleName": "Stadt Neckargemünd — Veranstaltungen",
+    "quelleUrl": "https://www.neckargemuend.de/start/erleben/veranstaltungen.html",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:33",
-    "zeitraum": "wochenende"
+    "lastChecked": "2026-07-30T19:25:05",
+    "zeitraum": "ausblick"
   },
   {
-    "id": "e58a9fc92722",
-    "titel": "Sinse.Mein.Sommer - Innenstadtaktion",
-    "beschreibungKurz": "Sinse.Mein.Sommer - Innenstadtaktion Kernstadt Senioren Musik Aktionstag Aktivität Tourismus Datum 30.07.2026 Uhrzeit 16:00 Uhr bis 19:00 Uhr Veranstalter Stadtverwaltung Sinsheim icon.place.event Sinsheimer Innenstadt Bahnhofstraße 74889 S",
+    "id": "ddca48133e7d",
+    "titel": "30. Künstlerfahnenfestival \"Verspeise die leise Weise\"",
+    "beschreibungKurz": "30. Künstlerfahnenfestival \"Verspeise die leise Weise\" Kunst & Ausstellungen Datum 30.07.2026 bis 02.08.2026 Uhrzeit 14:00 Uhr bis 16:00 Uhr Veranstalter Eppingen Veranstaltungsort Stadt- und Fachwerkmuseum Alte Universität Mehr erfahren",
     "datumStart": "2026-07-30",
-    "datumEnd": "2026-07-30",
+    "datumEnd": "2026-08-02",
     "uhrzeit": "",
     "ort": "",
     "adresse": "",
-    "stadt": "Sinsheim",
-    "entfernungKm": 0.0,
-    "kategorie": "Sonstiges",
-    "drinnenDraussen": "draussen",
+    "stadt": "Eppingen",
+    "entfernungKm": 13.1,
+    "kategorie": "Fest",
+    "drinnenDraussen": "drinnen",
     "wetter": null,
     "altersempfehlung": "",
     "kostenHinweis": "",
-    "quelleName": "Stadt Sinsheim — Veranstaltungskalender",
-    "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
+    "quelleName": "Stadt Eppingen — Veranstaltungskalender",
+    "quelleUrl": "https://www.eppingen.de/freizeit-kultur/veranstaltungskalender",
     "relevanzScore": 0.13,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:33",
+    "lastChecked": "2026-07-30T19:25:13",
     "zeitraum": "wochenende"
   },
   {
@@ -1031,7 +1445,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.05,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1054,7 +1468,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -1077,7 +1491,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -1100,7 +1514,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:50",
     "zeitraum": "wochenende"
   },
   {
@@ -1123,7 +1537,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1146,7 +1560,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1169,7 +1583,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1192,7 +1606,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1215,7 +1629,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1238,7 +1652,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1261,7 +1675,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1284,7 +1698,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "wochenende"
   },
   {
@@ -1307,7 +1721,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1330,7 +1744,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1353,7 +1767,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1376,7 +1790,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1399,7 +1813,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1422,7 +1836,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1445,7 +1859,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1468,7 +1882,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1491,7 +1905,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1514,7 +1928,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1537,7 +1951,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1560,7 +1974,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1583,7 +1997,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1606,7 +2020,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1629,7 +2043,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1652,7 +2066,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1675,7 +2089,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1698,7 +2112,7 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
   },
   {
@@ -1721,31 +2135,8 @@
     "quelleUrl": "https://www.heidelberg.de/site/Heidelberg2021/zmservice/833798/ical/ical.ics",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:30",
+    "lastChecked": "2026-07-30T19:24:51",
     "zeitraum": "ausblick"
-  },
-  {
-    "id": "524bc0b82237",
-    "titel": "Der Sommer zieht in die Sinsheimer Innenstadt ein! Mit Sinse.Mein.Sommer laden gemütliche Liegestühle zum Verweilen, Ent",
-    "beschreibungKurz": "Details einblenden Der Sommer zieht in die Sinsheimer Innenstadt ein! Mit Sinse.Mein.Sommer laden gemütliche Liegestühle zum Verweilen, Entspannen und Genießen ein. Ob bei einer kleinen Shoppingpause, einem Eis in der Sonne oder einfach zum",
-    "datumStart": "2026-07-30",
-    "datumEnd": "2026-07-30",
-    "uhrzeit": "",
-    "ort": "",
-    "adresse": "",
-    "stadt": "Sinsheim",
-    "entfernungKm": 0.0,
-    "kategorie": "Workshop",
-    "drinnenDraussen": "draussen",
-    "wetter": null,
-    "altersempfehlung": "",
-    "kostenHinweis": "",
-    "quelleName": "Stadt Sinsheim — Veranstaltungskalender",
-    "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
-    "relevanzScore": 0.0,
-    "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:33",
-    "zeitraum": "wochenende"
   },
   {
     "id": "ab4eebb204c8",
@@ -1767,13 +2158,13 @@
     "quelleUrl": "https://www.sinsheim.de/freizeit-kultur/veranstaltungen-feste-maerkte/veranstaltungskalender",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:33",
+    "lastChecked": "2026-07-30T19:24:55",
     "zeitraum": "wochenende"
   },
   {
-    "id": "21b52e2a1ead",
-    "titel": "Escape Room Wald mit den Förstern Samuel Ziegler und Fabian Ernst (mit Anmeldung) 29. Juli 2026",
-    "beschreibungKurz": "Escape Room Wald mit den Förstern Samuel Ziegler und Fabian Ernst (mit Anmeldung) 29. Juli 2026 30 Jul Roxette 30. Juli 2026 31 Jul Rose Valland Spionin für die Kunst 31. Juli 2026 01 Aug Michael Patrick Kelly 01. August 2026 01 Aug Stolper",
+    "id": "e37a880d12c7",
+    "titel": "Roxette 30. Juli 2026",
+    "beschreibungKurz": "30 Jul Roxette 30. Juli 2026 31 Jul Rose Valland Spionin für die Kunst 31. Juli 2026 01 Aug Michael Patrick Kelly 01. August 2026 01 Aug Stolpersteinführung 01. August 2026 01 Aug Tag der offenen Tür -Sternwarte Meckesheim 01. August 2026 0",
     "datumStart": "2026-08-08",
     "datumEnd": "2026-08-09",
     "uhrzeit": "",
@@ -1782,7 +2173,7 @@
     "stadt": "Region Rhein-Neckar",
     "entfernungKm": null,
     "kategorie": "Fest",
-    "drinnenDraussen": "draussen",
+    "drinnenDraussen": "",
     "wetter": null,
     "altersempfehlung": "",
     "kostenHinweis": "",
@@ -1790,7 +2181,191 @@
     "quelleUrl": "https://www.imsuedenganzoben.de/rhein-neckar/de",
     "relevanzScore": 0.0,
     "manuellGeprueft": false,
-    "lastChecked": "2026-07-30T14:27:35",
+    "lastChecked": "2026-07-30T19:24:57",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "79daada97e81",
+    "titel": "Freitag, 07.08.2026 | 17:30 - 19:00 Uhr Ortsrundgang mit Bürgermeister Boris Schmitt und Ortsvorsteher Daniel Grasmick in Daisbach",
+    "beschreibungKurz": "Freitag, 07.08.2026 | 17:30 - 19:00 Uhr Ortsrundgang mit Bürgermeister Boris Schmitt und Ortsvorsteher Daniel Grasmick in Daisbach Veranstalter Stadt Waibstadt Postfach: 1220 74913 Waibstadt Hauptstraße 31 74915 Waibstadt OpenStreetMap Fahr",
+    "datumStart": "2026-08-07",
+    "datumEnd": "2026-08-07",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Waibstadt",
+    "entfernungKm": 5.7,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Waibstadt — Veranstaltungen",
+    "quelleUrl": "https://www.waibstadt.de/freizeit-und-kultur/veranstaltungen",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:09",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "6b77ee2196bb",
+    "titel": "Samstag, 08.08.2026 | ab 18:00 Uhr Malleparty, SFZ BigBand",
+    "beschreibungKurz": "Samstag, 08.08.2026 | ab 18:00 Uhr Malleparty, SFZ BigBand Homepage www.turnverein-waibstadt.de/sfz-big-band Veranstalter SFZ Big Band Veranstaltungsort Marktplatz Beschreibung Malleparty Fiesta Fatal komm nach Waiorca Wie schon im letzten ",
+    "datumStart": "2026-08-08",
+    "datumEnd": "2026-08-08",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Waibstadt",
+    "entfernungKm": 5.7,
+    "kategorie": "Markt",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Waibstadt — Veranstaltungen",
+    "quelleUrl": "https://www.waibstadt.de/freizeit-und-kultur/veranstaltungen",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:09",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "3373ca1ed6ba",
+    "titel": "Veranstaltungen",
+    "beschreibungKurz": "Veranstaltungen Hier finden Sie unsere Veranstaltungen in der Übersicht. Suchbegriff eingeben Suchfilter Zeitraum Von: Bis: Kategorien Feste Festivals Führungen Gottesdienste / Andere Gottesdienste / Evangelisch Kinder/Jugend Konzerte Kunst",
+    "datumStart": "2026-07-30",
+    "datumEnd": "2026-07-31",
+    "uhrzeit": "",
+    "ort": "",
+    "adresse": "",
+    "stadt": "Eppingen",
+    "entfernungKm": 13.1,
+    "kategorie": "Fest",
+    "drinnenDraussen": "drinnen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Eppingen — Veranstaltungskalender",
+    "quelleUrl": "https://www.eppingen.de/freizeit-kultur/veranstaltungskalender",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:13",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "e2294fe6ad29",
+    "titel": "1200 Jahre Mosbacher Religionsgeschichte - Vom Benediktinerkloster zur Simultankirche",
+    "beschreibungKurz": "Führungen Samstag, 01.08.2026 14:30 Uhr 1200 Jahre Mosbacher Religionsgeschichte - Vom Benediktinerkloster zur Simultankirche Mosbach",
+    "datumStart": "2026-08-01",
+    "datumEnd": "2026-08-01",
+    "uhrzeit": "",
+    "ort": "Mosbach",
+    "adresse": "",
+    "stadt": "Mosbach",
+    "entfernungKm": 22.3,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "drinnen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "900963809b1d",
+    "titel": "Altstadtführung",
+    "beschreibungKurz": "Führungen Samstag, 01.08.2026 Mittwochs: 14:30 Uhr, Samstags: 11:00 Uhr Altstadtführung Innenstadt/Fußgängerzone",
+    "datumStart": "2026-08-01",
+    "datumEnd": "2026-08-01",
+    "uhrzeit": "",
+    "ort": "Innenstadt/Fußgängerzone",
+    "adresse": "",
+    "stadt": "Innenstadt/Fußgängerzone",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "3758f8265e41",
+    "titel": "LIFEsong-Gottesdienst",
+    "beschreibungKurz": "Kirche/Gottesdienste Sonntag, 02.08.2026 10:10 Uhr LIFEsong-Gottesdienst Stiftskirche",
+    "datumStart": "2026-08-02",
+    "datumEnd": "2026-08-02",
+    "uhrzeit": "",
+    "ort": "Stiftskirche",
+    "adresse": "",
+    "stadt": "Stiftskirche",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "drinnen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "wochenende"
+  },
+  {
+    "id": "dd5412deae46",
+    "titel": "Altstadtführung",
+    "beschreibungKurz": "Führungen Mittwoch, 05.08.2026 Mittwochs: 14:30 Uhr, Samstags: 11:00 Uhr Altstadtführung Innenstadt/Fußgängerzone",
+    "datumStart": "2026-08-05",
+    "datumEnd": "2026-08-05",
+    "uhrzeit": "",
+    "ort": "Innenstadt/Fußgängerzone",
+    "adresse": "",
+    "stadt": "Innenstadt/Fußgängerzone",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
+    "zeitraum": "ausblick"
+  },
+  {
+    "id": "7b88184ad6dc",
+    "titel": "Altstadtführung",
+    "beschreibungKurz": "Führungen Samstag, 08.08.2026 Mittwochs: 14:30 Uhr, Samstags: 11:00 Uhr Altstadtführung Innenstadt/Fußgängerzone",
+    "datumStart": "2026-08-08",
+    "datumEnd": "2026-08-08",
+    "uhrzeit": "",
+    "ort": "Innenstadt/Fußgängerzone",
+    "adresse": "",
+    "stadt": "Innenstadt/Fußgängerzone",
+    "entfernungKm": null,
+    "kategorie": "Sonstiges",
+    "drinnenDraussen": "draussen",
+    "wetter": null,
+    "altersempfehlung": "",
+    "kostenHinweis": "",
+    "quelleName": "Stadt Mosbach — Veranstaltungskalender",
+    "quelleUrl": "https://www.mosbach.de/veranstaltungskalender",
+    "relevanzScore": 0.0,
+    "manuellGeprueft": false,
+    "lastChecked": "2026-07-30T19:25:16",
     "zeitraum": "ausblick"
   }
 ]
