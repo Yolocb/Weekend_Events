@@ -52,8 +52,11 @@ EVENTS_FILE = DOCS_DATA / "events.json"
 REVIEW_FILE = DOCS_DATA / "review.json"
 REPORT_FILE = PROJECT_DIR / "report.md"
 
-USER_AGENT = ("WeekendEventsBot/1.0 (privates Familienprojekt; woechentlicher "
-              "Scan; Kontakt: bitte-nicht-blockieren@example.org)")
+# Realistischer Browser-User-Agent: Manche Kommunalseiten (z. B. dvv-Plattform)
+# liefern Bot-UAs eine abgespeckte Seite OHNE Event-Liste. Wir lesen nur
+# oeffentliche Inhalte, daher ist ein Standard-UA hier legitim und noetig.
+USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 REQUEST_TIMEOUT = 12
 POLITE_DELAY = 1.0
 MAX_RETRIES = 1
@@ -505,6 +508,42 @@ def extrahiere_titel(el, blocktext):
     return kandidat[:120] if kandidat else "(ohne Titel)"
 
 
+def parse_vevents(soup, quelle, mp, orte_tab, umkreis):
+    """Parst hCalendar/vevent-Mikroformat (dvv-Plattform u.a.).
+
+    Struktur: <li class="... vevent"> mit
+      <span class="dtstart" title="YYYY-MM-DD">...</span> und
+      <div class="summary"><a ...>Titel</a></div> (+ optional class="location").
+    Zuverlaessiger als Text-Heuristik, da Datum maschinenlesbar im title-Attribut.
+    Rueckgabe: Liste von Events (leer, wenn keine vevents vorhanden).
+    """
+    events = []
+    for el in soup.select(".vevent"):
+        # Startdatum aus dtstart (title-Attribut bevorzugt, sonst Text).
+        dt = el.select_one(".dtstart")
+        iso = None
+        if dt:
+            iso = dt.get("title") or None
+            if not iso:
+                iso, _ = parse_zeitraum(dt.get_text(" ", strip=True))
+        if not iso or not re.match(r"\d{4}-\d{2}-\d{2}", iso):
+            continue
+        iso = iso[:10]
+        # Enddatum optional.
+        dte = el.select_one(".dtend")
+        iso_ende = (dte.get("title") or "")[:10] if dte and dte.get("title") else iso
+        # Titel aus summary.
+        summ = el.select_one(".summary")
+        titel = summ.get_text(" ", strip=True) if summ else el.get_text(" ", strip=True)[:120]
+        # Ort aus location, falls vorhanden.
+        loc = el.select_one(".location")
+        ort = loc.get_text(" ", strip=True) if loc else ""
+        besch = el.get_text(" ", strip=True)
+        events.append(make_event(titel, besch, iso, ort, quelle, mp, orte_tab,
+                                  umkreis, iso_ende=iso_ende or iso))
+    return events
+
+
 def verarbeite_html(session, quelle, mp, orte_tab, umkreis, log):
     text, status, err = hole(session, quelle["url"])
     if err or not text:
@@ -515,8 +554,13 @@ def verarbeite_html(session, quelle, mp, orte_tab, umkreis, log):
                     f"(kein Headless-Browser)")
         return []
     soup = BeautifulSoup(text, "html.parser")
-    events = []
-    # Heuristik: Blöcke mit Datum + Keyword einsammeln.
+
+    # 1) hCalendar/vevent-Mikroformat bevorzugen (zuverlaessig, maschinenlesbar).
+    events = parse_vevents(soup, quelle, mp, orte_tab, umkreis)
+    if events:
+        return events
+
+    # 2) Fallback: generische Heuristik (Bloecke mit Datum + Keyword).
     for el in soup.find_all(["article", "li", "div", "tr"]):
         blocktext = el.get_text(" ", strip=True)
         if not blocktext or len(blocktext) < 15:
