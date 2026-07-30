@@ -1,12 +1,12 @@
 name: Woechentlicher Event-Scan
 
-# Sucht einmal pro Woche (Donnerstag) besondere Kinder-Events in der Region
+# Sucht einmal pro Woche (Montag) besondere Kinder-Events in der Region
 # Sinsheim und committet die aktualisierte docs/data/events.json automatisch.
 
 on:
   schedule:
-    # Donnerstag 05:17 UTC (krumme Minute, um Lastspitzen zu vermeiden).
-    - cron: "17 5 * * 4"
+    # Montag 05:17 UTC (krumme Minute, um Lastspitzen zu vermeiden).
+    - cron: "17 5 * * 1"
   workflow_dispatch:
 
 permissions:

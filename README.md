@@ -5,8 +5,10 @@ Statische Website, die **wöchentlich besondere Kinder- und Familienveranstaltun
 in der Region Sinsheim (~30 km) anzeigt. **Standard-Dauerangebote werden bewusst
 ausgeblendet** — es geht nur um das Besondere fürs Wochenende.
 
+- **Live-Seite:** https://yolocb.github.io/Weekend_Events/
+- **Repository:** https://github.com/Yolocb/Weekend_Events
 - **Zielgruppe:** Familie mit Kind (~6–12 Jahre)
-- **Betrieb:** Python-Scraper → `events.json` → GitHub Pages, wöchentlich per GitHub Actions
+- **Betrieb:** Python-Scraper → `events.json` → GitHub Pages, wöchentlich (montags) per GitHub Actions
 - **Frontend:** Vanilla HTML/CSS/JS, mobile-first, keine Frameworks
 
 ## Projektstruktur
@@ -52,7 +54,7 @@ python -m http.server 8000   # dann http://localhost:8000
 
 ## Wöchentlicher Betrieb (GitHub Actions)
 
-Der Workflow `weekly-scan.yml` läuft **donnerstags** automatisch (plus manuell über
+Der Workflow `weekly-scan.yml` läuft **montags** automatisch (plus manuell über
 „Run workflow"), führt den Scraper aus und committet geänderte `events.json` /
 `review.json` zurück. GitHub Pages aktualisiert die Seite dann selbst.
 
