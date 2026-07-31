@@ -23,6 +23,9 @@ const el = {
   absAus: document.getElementById("abschnitt-ausblick"),
   listeWe: document.getElementById("liste-wochenende"),
   listeAus: document.getElementById("liste-ausblick"),
+  absArchiv: document.getElementById("abschnitt-archiv"),
+  listeArchiv: document.getElementById("liste-archiv"),
+  archivZaehler: document.getElementById("archiv-zaehler"),
   datenstand: document.getElementById("datenstand"),
 };
 
@@ -50,11 +53,37 @@ async function ladeDaten(){
     fuelleKategorien(daten);
     setzeDatenstand(daten);
     rendern();
+    ladeArchiv();  // unabhaengig, blockiert die Hauptansicht nicht
   }catch(f){
     console.error(f);
     el.fehlertext.textContent = f.message || "Unbekannter Fehler.";
     zeige("fehler");
   }
+}
+
+/** Laedt das Archiv (vergangene Events) nach. Fehlt die Datei, bleibt der
+    Abschnitt einfach ausgeblendet — kein Fehler fuer den Nutzer. */
+async function ladeArchiv(){
+  try{
+    const resp = await fetch("data/archiv.json", { cache:"no-cache" });
+    if(!resp.ok) return;                          // 404 = noch kein Archiv
+    const daten = await resp.json();
+    if(!Array.isArray(daten) || daten.length===0) return;
+    rendereArchiv(daten);
+  }catch(f){
+    console.warn("Archiv nicht verfuegbar:", f);  // still & leise
+  }
+}
+
+/** Rendert den Archiv-Abschnitt: neueste vergangene Events zuerst. */
+function rendereArchiv(daten){
+  const evs = daten
+    .filter(e=>e.datumStart)
+    .sort((a,b)=>(b.datumStart||"").localeCompare(a.datumStart||""));
+  if(evs.length===0) return;
+  el.listeArchiv.innerHTML = evs.map(archivKarte).join("");
+  el.archivZaehler.textContent = evs.length===1 ? "1 Event" : `${evs.length} Events`;
+  el.absArchiv.hidden = false;
 }
 
 function fuelleKategorien(daten){
@@ -147,7 +176,24 @@ function karte(e){
     </li>`;
 }
 
-// ---------- Kalender-Export (.ics) ----------
+/** Kompakte Karte fuers Archiv — ohne Wetter/Kalender, mit Link zur Quelle. */
+function archivKarte(e){
+  const entf = e.entfernungKm!=null ? `<span class="badge badge-entf">${e.entfernungKm} km</span>` : "";
+  const quelle = e.quelleUrl
+    ? `<a class="archiv-link" href="${escape(e.quelleUrl)}" target="_blank" rel="noopener noreferrer">Quelle &rarr;</a>`
+    : "";
+  return `
+    <li class="event archiv-event">
+      <div class="kopfzeile">
+        <span class="badge badge-kat">${escape(e.kategorie||"Sonstiges")}</span>
+        ${entf}
+      </div>
+      <p class="datum">${escape(formatiereDatum(e.datumStart))}</p>
+      <h3>${escape(e.titel)}</h3>
+      <p class="ort">${escape(e.stadt||e.ort||"")}</p>
+      ${quelle}
+    </li>`;
+}
 
 /** ISO "2026-08-01" -> "20260801" fuer ICS-Ganztagstermine. */
 function icsDatum(iso){ return iso.replace(/-/g,""); }
