@@ -42,6 +42,21 @@ function formatiereDatum(iso){
   return `${WOCHENTAGE[d.getDay()]}, ${d.getDate()}. ${MONATE[d.getMonth()]} ${d.getFullYear()}`;
 }
 
+/** Heute als ISO-Tag "YYYY-MM-DD" (lokale Zeit). */
+function heuteIso(){
+  const d=new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+}
+
+/** True, wenn ein Event vorbei ist (Enddatum bzw. Startdatum vor heute).
+    So bleibt die Liste taeglich aktuell, auch wenn der Scan nur montags laeuft.
+    Events ohne Datum gelten nie als vergangen. */
+function istVergangen(e){
+  const ende = e.datumEnd || e.datumStart;
+  if(!ende) return false;
+  return ende.slice(0,10) < heuteIso();
+}
+
 async function ladeDaten(){
   zeige("laden");
   try{
@@ -114,6 +129,7 @@ function zeige(welcher){
 function gefiltert(){
   const f=state.filter;
   return state.alle.filter(e=>{
+    if(istVergangen(e)) return false;  // vorbei -> nicht mehr anzeigen
     if(f.kategorie!=="alle" && e.kategorie!==f.kategorie) return false;
     if(e.entfernungKm!=null && e.entfernungKm>f.maxEntfernung) return false;
     if(f.zeitraum!=="alle" && (e.zeitraum||"wochenende")!==f.zeitraum) return false;
