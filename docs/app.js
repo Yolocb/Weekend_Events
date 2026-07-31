@@ -57,6 +57,22 @@ function istVergangen(e){
   return ende.slice(0,10) < heuteIso();
 }
 
+/** Datumsanzeige fuer die Karte. Mehrtaegige Events werden als Zeitraum
+    gezeigt; laeuft so ein Event bereits (Start vergangen, Ende zukuenftig),
+    steht "noch bis …" statt eines vergangen wirkenden Startdatums. */
+function formatiereZeitraum(e){
+  const start = e.datumStart;
+  const ende = e.datumEnd;
+  if(!start) return "Termin folgt";
+  // Eintaegig (oder Ende == Start): normales Datum.
+  if(!ende || ende.slice(0,10)===start.slice(0,10)) return formatiereDatum(start);
+  const heute = heuteIso();
+  // Mehrtaegig und laeuft schon: "noch bis <Ende>".
+  if(start.slice(0,10) < heute) return `noch bis ${formatiereDatum(ende)}`;
+  // Mehrtaegig, noch nicht begonnen: "<Start> – <Ende>".
+  return `${formatiereDatum(start)} – ${formatiereDatum(ende)}`;
+}
+
 async function ladeDaten(){
   zeige("laden");
   try{
@@ -176,7 +192,7 @@ function karte(e){
         <span class="badge badge-kat">${escape(e.kategorie||"Sonstiges")}</span>
         ${ort2}${entf}${geprueft}
       </div>
-      <p class="datum">${escape(formatiereDatum(e.datumStart))}${uhrzeit}</p>
+      <p class="datum">${escape(formatiereZeitraum(e))}${uhrzeit}</p>
       <h3>${escape(e.titel)}</h3>
       <p class="ort">${escape(e.stadt||e.ort||"")}</p>
       ${wetter}
