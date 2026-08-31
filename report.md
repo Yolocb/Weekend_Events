@@ -1,60 +1,65 @@
 # Weekend-Events — Scan-Report
 
-**Lauf:** 24.08.2026 05:53  
-**Zeitfenster:** 2026-08-24 bis 2026-09-06 (Wochenende bis 2026-08-30)
+**Lauf:** 31.08.2026 11:35  
+**Zeitfenster:** 2026-08-31 bis 2026-09-13 (Wochenende bis 2026-09-06)
 
 ## Ergebnis
-- **45 Events** auf der Seite (29 neu seit letztem Lauf)
-- **107 Treffer** in der Prüfliste (review.json)
+- **54 Events** auf der Seite (34 neu seit letztem Lauf)
+- **135 Treffer** in der Prüfliste (review.json)
 - **Wetter:** geladen (Open-Meteo)
 
 ## Rohtreffer pro Quelle
 
 | Quelle | Typ | Rohtreffer |
 |---|---|---|
-| Stadt Heidelberg — Veranstaltungskalender | ical | 835 |
-| Stadt Sinsheim — Veranstaltungskalender | html | 35 |
+| Stadt Heidelberg — Veranstaltungskalender | ical | 843 |
+| Stadt Sinsheim — Veranstaltungskalender | html | 26 |
 | Im Süden ganz oben (Tourismus Rhein-Neckar / deinefreizeit) | html | 18 |
-| Stadt Wiesloch — Veranstaltungskalender | ical | 71 |
-| Rhein-Neckar-Kreis — Veranstaltungskalender | html | 8 |
+| Stadt Wiesloch — Veranstaltungskalender | ical | 67 |
+| Rhein-Neckar-Kreis — Veranstaltungskalender | html | 44 |
 | Stadt Neckargemünd — Veranstaltungen | html | 20 |
 | Stadt Waibstadt — Veranstaltungen | html | 24 |
-| Stadt Eppingen — Veranstaltungskalender | html | 11 |
+| Stadt Eppingen — Veranstaltungskalender | html | 15 |
 | Stadt Mosbach — Veranstaltungskalender | html | 24 |
 | Stadt Schwetzingen — Veranstaltungskalender | html | 24 |
 | Gemeinde Angelbachtal — Veranstaltungen | html | 46 |
-| Stadt Östringen — Veranstaltungskalender | html | 21 |
+| Stadt Östringen — Veranstaltungskalender | html | 25 |
 
 ## Neue Events diese Woche
-- 2026-08-24 — Ausstellung WEG! Neuanfang – Altanfang, Galerie (Eppingen)
-- 2026-08-24 — Krämermarkt in der Altstadt (Eppingen)
-- 2026-08-25 — HERZBLUT - Albert Frey (Eppingen)
-- 2026-08-28 — Fledermaus-Exkursion zur Batnight (Sinsheim)
-- 2026-08-29 — Wochenmarkt (Sinsheim)
-- 2026-08-29 — nach dem WM-Triumph Radsportlegenden würdigen den Weltmeister von 1966, Rudi Altig, im Technik Museum Sinsheim (Sinsheim)
-- 2026-08-29 — Stolpersteinführung (Sinsheim)
-- 2026-08-29 — Stolpersteinführung: Die Hauptstraße in Sinsheim – Einkaufen für den täglichen Bedarf Nach dem Auftakt der Stolpersteinf (Sinsheim)
-- 2026-08-30 — Internationales Straßentheater (Innenstadt/Fußgängerzone)
-- 2026-08-31 — Lebenslandkarten erstellen (Heidelberg)
-- 2026-09-01 — Fantasiereise – ein fantastisches Abenteuer (Heidelberg)
-- 2026-09-01 — Reportage Workshop (Heidelberg)
-- 2026-09-02 — Ferienprogramm - Technik verstehen – Programmieren erleben! (Östringen)
-- 2026-09-02 — Ferienprogramm - Licht an! Bunte Lichter gestalten. (Östringen)
-- 2026-09-02 — Dash programmieren (Heidelberg)
-- 2026-09-02 — Finissage der Intervention "100 Jahre GEDOK" im Kurpfälzischen Museum (Heidelberg)
-- 2026-09-02 — Deutsch-spanische Geschichtenzeit: Miteinander leben / Vivir juntos (Heidelberg)
-- 2026-09-02 — „Dem Volke einmal Kunst bringen“ – Augusta Bender und Magdalena Mävers begegnen sich (Kindlers Buchhandlung)
-- 2026-09-03 — makey makey /Scratch Programmieren Workshop (Heidelberg)
-- 2026-09-03 — Kindermitmachkonzert mit herrH (Burggraben Neckarelz)
-- 2026-09-03 — #Book Talk – Über Bücher sprechen (Heidelberg)
-- 2026-09-04 — Überraschungstour in der Heidelberger Altstadt (Neckarmünzplatz)
-- 2026-09-04 — Krea Kids im Kreativ Eck (Kreativ Eck)
-- 2026-09-04 — CRAFTBEER-Tasting (Brauerei zum Klosterhof, Stiftweg/4)
-- 2026-09-05 — Riesenspinnen & Insektenausstellung - Heidelberg BürgerHAUS (Heidelberg)
-- 2026-09-05 — Back2Nature - Natur neu entdecken (Theaterstraße)
-- 2026-09-05 — Kurpfälzer Brotmarkt und Genießermarkt (Marktplatz)
-- 2026-09-06 — Riesenspinnen & Insektenausstellung - Heidelberg BürgerHAUS (Heidelberg)
-- 2026-09-06 — So , 06.09.2026 , 15 Uhr (Neckargemünd)
+- 2026-08-31 — Ausstellung WEG! Neuanfang – Altanfang, Galerie (Eppingen)
+- 2026-09-02 — Spieleabend in der Stadtbibliothek (Sinsheim)
+- 2026-09-02 — Die Leseminis in der Stadtbibliothek (Sinsheim)
+- 2026-09-02 — Wochenmarkt (Sinsheim)
+- 2026-09-03 — Spiel und Spaß für Kinder (Eppingen)
+- 2026-09-04 — Halbe nach Fünf - für Kinder und Familien (Eppingen)
+- 2026-09-04 — Datum 04.09.2026 (Eppingen)
+- 2026-09-05 — Letzter Spielenachmittag der Freibadsaison im Freibad Sinsheim (Sinsheim)
+- 2026-09-05 — Animiertes Bilderbuchkino in der Stadtbibliothek (Sinsheim)
+- 2026-09-05 — Ausstellung WEG! Neuanfang – Altanfang, Galerie (Eppingen)
+- 2026-09-05 — Wochenmarkt (Sinsheim)
+- 2026-09-05 — Buchmachermarkt (Hospitalhof)
+- 2026-09-05 — Flohmarkt am Messplatz (Messplatz Neckarelz)
+- 2026-09-07 — Mama Muh – Figurentheater (Hospitalhof)
+- 2026-09-07 — Icon E-Mail schreiben (Sinsheim)
+- 2026-09-07 — Hospizgemeinschaft Schwetzingen: Informationsabend zur Vorsorgemappe (Schwetzingen)
+- 2026-09-08 — Heiss auf Lesen Workshop: Schreibwerkstatt mit Juliane Sophie Kayser (Heidelberg)
+- 2026-09-08 — Beschreibung (Rhein-Neckar-Kreis)
+- 2026-09-09 — Ferienprogramm Rothirsch - Spannendes rund um das stolze Großwild (Östringen)
+- 2026-09-10 — Tierkinder (Workshop im Zoo Heidelberg - Schulkinder & Jugendliche) (Heidelberg)
+- 2026-09-11 — Baumesse Heidelberg 2026 (Heidelberg)
+- 2026-09-11 — Krea Kids im Kreativ Eck (Kreativ Eck)
+- 2026-09-11 — The Prestige | WoAndersKino | Carl Bosch Museum (Heidelberg)
+- 2026-09-12 — Ein Königreich für ein Lama | Kinderkino (Heidelberg)
+- 2026-09-12 — Kirchheimer Kerwe 2026 (Heidelberg)
+- 2026-09-12 — Sa , 12.09.2026 , 10:30 - 12:30 Uhr (Neckargemünd)
+- 2026-09-12 — Sommerfest Musikverein (Angelbachtal)
+- 2026-09-12 — Ferienabschlussfest - "Die Welt ist bunt" in der Stadtbücherei! (Östringen)
+- 2026-09-13 — Hart auf Hart (Heidelberg)
+- 2026-09-13 — Ein Königreich für ein Lama | Kinderkino (Heidelberg)
+- 2026-09-13 — Beschreibung (Rhein-Neckar-Kreis)
+- 2026-09-13 — Konzert: Nur Musik? (Heidelberg)
+- 2026-09-13 — So , 13.09.2026 , 15 Uhr (Neckargemünd)
+- 2026-09-13 — So , 13.09.2026 (Neckargemünd)
 
 ---
 *Automatisch erzeugt vom Scan-Lauf. Angaben ohne Gewähr.*
