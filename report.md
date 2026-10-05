@@ -1,82 +1,77 @@
 # Weekend-Events — Scan-Report
 
-**Lauf:** 28.09.2026 11:41  
-**Zeitfenster:** 2026-09-28 bis 2026-10-11 (Wochenende bis 2026-10-04)
+**Lauf:** 05.10.2026 12:16  
+**Zeitfenster:** 2026-10-05 bis 2026-10-18 (Wochenende bis 2026-10-11)
 
 ## Ergebnis
-- **74 Events** auf der Seite (51 neu seit letztem Lauf)
-- **204 Treffer** in der Prüfliste (review.json)
+- **83 Events** auf der Seite (46 neu seit letztem Lauf)
+- **216 Treffer** in der Prüfliste (review.json)
 - **Wetter:** geladen (Open-Meteo)
 
 ## Rohtreffer pro Quelle
 
 | Quelle | Typ | Rohtreffer |
 |---|---|---|
-| Stadt Heidelberg — Veranstaltungskalender | ical | 894 |
-| Stadt Sinsheim — Veranstaltungskalender | html | 11 |
+| Stadt Heidelberg — Veranstaltungskalender | ical | 879 |
+| Stadt Sinsheim — Veranstaltungskalender | html | 15 |
 | Im Süden ganz oben (Tourismus Rhein-Neckar / deinefreizeit) | html | 14 |
-| Stadt Wiesloch — Veranstaltungskalender | ical | 91 |
-| Rhein-Neckar-Kreis — Veranstaltungskalender | html | 44 |
+| Stadt Wiesloch — Veranstaltungskalender | ical | 81 |
+| Rhein-Neckar-Kreis — Veranstaltungskalender | html | 42 |
 | Stadt Neckargemünd — Veranstaltungen | html | 20 |
 | Stadt Waibstadt — Veranstaltungen | html | 24 |
-| Stadt Eppingen — Veranstaltungskalender | html | 11 |
+| Stadt Eppingen — Veranstaltungskalender | html | 17 |
 | Stadt Mosbach — Veranstaltungskalender | html | 24 |
-| Stadt Schwetzingen — Veranstaltungskalender | html | 20 |
-| Gemeinde Angelbachtal — Veranstaltungen | html | 36 |
+| Stadt Schwetzingen — Veranstaltungskalender | html | 24 |
+| Gemeinde Angelbachtal — Veranstaltungen | html | 33 |
 | Stadt Östringen — Veranstaltungskalender | html | 12 |
 
 ## Neue Events diese Woche
-- 2026-09-28 — Ausstellung WEG! Neuanfang – Altanfang, Galerie (Eppingen)
-- 2026-09-29 — Technik-Erlebnisführung für Schulklassen | Für neugierige Technikexperten der Klassenstufen 7 bis 13 (Sinsheim)
-- 2026-09-30 — Die Leseminis in der Stadtbibliothek (Sinsheim)
-- 2026-09-30 — Wochenmarkt (Sinsheim)
-- 2026-09-30 — Mi , 30.09.2026 , 12:30-13:30 Uhr (Neckargemünd)
-- 2026-10-01 — Klima verstehen. Zukunft gestalten. Vortragsreihe (Wiesloch)
-- 2026-10-02 — Kerwe-Rummel auf dem Kleinbrückentorplatz/Innenstadt (Eppingen)
-- 2026-10-02 — Büchermarkt Lionsclub, Annahme und Verkauf (Wiesloch)
-- 2026-10-02 — Hax'n Essen (Eppingen)
-- 2026-10-02 — Vorstellungsabend zur Erlangung der Amateurfunklizenz (Mosbach)
-- 2026-10-03 — Sa , 03.10.2026 , 10:00 - 16:00 (Neckargemünd)
-- 2026-10-03 — Sa , 03.10.2026 , 17:00 Uhr (Neckargemünd)
-- 2026-10-04 — So , 04.10.2026 , 11:00 - 17:00 (Neckargemünd)
-- 2026-10-04 — Interkulturelle Woche: Wohin Mit Mir (Heidelberg)
-- 2026-10-05 — African Night /w Lagos Thugs (Nigeria) & Senegalese Soul Food (Heidelberg)
-- 2026-10-05 — Hospizgemeinschaft Schwetzingen: Informationsabend zur Vorsorgemappe (Schwetzingen)
-- 2026-10-06 — Bookmän: Lesung mit Rüdiger Bertram (Heidelberg)
-- 2026-10-06 — Best of Cinema: Pans Labyrinth (Heidelberg)
-- 2026-10-07 — Deutsch-spanische Geschichtenzeit: Märchen / Cuento de hadas (Heidelberg)
-- 2026-10-07 — Au bonheur des vivants - Eröffnung der französischen Woche mit der Compagnie Les âmes nocturnes (Heidelberg)
-- 2026-10-07 — Apfelsammeln auf der Streuobstwiese (Theaterstraße)
-- 2026-10-08 — Escape Games (Heidelberg)
-- 2026-10-08 — Eure Einheit, unsere Einheit – An wen erinnern wir? „Geteilte Geschichte, gemeinsame Zukunft. Deutsche Einheit im Gespräch“ - Online-Reihe (Digitale Veranstaltung)
-- 2026-10-08 — RosaKehlchen - Aladdin und die Tuntenlampe (Heidelberg)
-- 2026-10-08 — Frauenwirtschaftstage: BERUFSTÄTIG. MUTIG. VERNETZT. (Mosbach)
-- 2026-10-09 — Fr , 09.10.2026 , 15:00 (Neckargemünd)
-- 2026-10-09 — Die drei ??? Familienlesung mit Christopher Tauber (Wiesloch)
-- 2026-10-09 — Überraschungstour in der Heidelberger Altstadt (Neckarmünzplatz)
-- 2026-10-09 — Lumière - l'aventure continue (Heidelberg)
-- 2026-10-09 — Vernissage: Ausstellung „Stimmen der Jugend” - Freies Hip-Hop-Institut & Friedrich-Ebert-Stiftung (Heidelberg)
-- 2026-10-10 — Werkstatt.Theater 2026 (Heidelberg)
-- 2026-10-10 — Flohmarkt im Hasenleiser-Rohrbach (Heidelberg)
-- 2026-10-10 — Konzert für Familien (Heidelberg)
-- 2026-10-10 — Sa , 10.10.2026 , 10:00 - 16:00 (Neckargemünd)
-- 2026-10-10 — Die Schokokuchenüberraschung (Heidelberg)
-- 2026-10-10 — Abenteuer für kleine Waldentdecker (Theaterstraße)
-- 2026-10-10 — Familienkonzert „Pusteluft und Zaubertöne – die Oboe erzählt“ (Heidelberg)
-- 2026-10-10 — Ausstellung „Stimmen der Jugend” - Freies Hip-Hop-Institut & Friedrich-Ebert-Stiftung (Heidelberg)
-- 2026-10-10 — Musik zur Marktzeit (Heidelberg)
-- 2026-10-10 — Büchermarkt Lionsclub, Annahme und Verkauf (Wiesloch)
-- 2026-10-11 — Werkstatt.Theater 2026 (Heidelberg)
-- 2026-10-11 — Isabel Pin: Benoît Mandelbrot (Heidelberg)
-- 2026-10-11 — Kidical Mass (Heidelberg)
-- 2026-10-11 — So , 11.10.2026 , 10:00 - 15:00 Uhr (Neckargemünd)
-- 2026-10-11 — So , 11.10.2026 , 11:00 - 17:00 (Neckargemünd)
-- 2026-10-11 — Kindertheater Papiermond (Kultur- und Begegnungszentrum fideljo)
-- 2026-10-11 — Bastel2Go im Kreativ Eck (Wunderplunder by Kreativeck)
-- 2026-10-11 — Der Zauberpudding (Heidelberg)
-- 2026-10-11 — La petite librairie - Neue Bücher aus Frankreich (Heidelberg)
-- 2026-10-11 — Film-Matinee zum Welthospiztag: Ich sterbe. Kommst du mit? | Eintritt frei (Heidelberg)
-- 2026-10-11 — Unterwegs auf dem Komfort-Wanderweg Heidelberg (Theaterstraße)
+- 2026-10-05 — Free at Heart | queerfilmnacht (Heidelberg)
+- 2026-10-05 — Kirchweihmarkt in der Altstadt (Eppingen)
+- 2026-10-05 — Kerwe-Rummel auf dem Kleinbrückentorplatz/Innenstadt (Eppingen)
+- 2026-10-06 — Lesen mit Hund (Schwetzingen)
+- 2026-10-06 — Technik-Erlebnisführung für Schulklassen | Für neugierige Technikexperten der Klassenstufen 7 bis 13 (Sinsheim)
+- 2026-10-07 — Spieleabend in der Stadtbibliothek (Sinsheim)
+- 2026-10-07 — Du und Ich & Ich und Du (Eppingen)
+- 2026-10-07 — Medikamentöse Therapie bei Brustkrebs: Was gibt es Neues? Neue Medikamente und innovative Behandlungsmöglichkeiten (Heidelberg)
+- 2026-10-07 — Icon E-Mail schreiben (Sinsheim)
+- 2026-10-07 — Wochenmarkt (Sinsheim)
+- 2026-10-07 — Zur Website Website (Eppingen)
+- 2026-10-08 — Du und Ich & Ich und Du (Eppingen)
+- 2026-10-08 — Morgen war Krieg (Heidelberg)
+- 2026-10-08 — Zur Website Website (Eppingen)
+- 2026-10-10 — Chorkonzert mit Band (Heidelberg)
+- 2026-10-11 — Der kleine Rabe Socke - Puppentheater (Alte Mälzerei)
+- 2026-10-11 — Flohmarktine - Frauenflohmarkt (Mosbach)
+- 2026-10-11 — Pilze rund um den Kohlhof (Heidelberg)
+- 2026-10-11 — Maronenfest - Hausprojekt paraSol (Heidelberg)
+- 2026-10-12 — Morgen war Krieg (Heidelberg)
+- 2026-10-12 — Figurentheater Pantaleon: Bär hat es schwer (Mosbach)
+- 2026-10-13 — Heidelberger Ausbildungs- und Studientage (Heidelberg)
+- 2026-10-13 — Gönn's dir - Der Treff Ü65 (Mosbach)
+- 2026-10-14 — Kamishibai - japanisches Erzähltheater: Herbst (Heidelberg)
+- 2026-10-14 — Operation bei Brustkrebs: Wie viel ist nötig? Neue Strategien zur schonenden und individuellen Behandlung (Heidelberg)
+- 2026-10-14 — Fachtagung: Unter welchen Bedingungen? Psychische Gesundheit und die Frage nach dem guten Aufwachsen (Heidelberg)
+- 2026-10-14 — Klavierabend Giacomo di Tollo (Heidelberg)
+- 2026-10-14 — 12. Literaturherbst Heidelberg: ROBERT STADLOBER singt und liest Tucholsky "Wenn wir einmal nicht grausam sind, dann glauben wir gleich, wir seien gut" (Heidelberg)
+- 2026-10-14 — Mi , 14.10.2026 , 09:00 bis 13:00 (Neckargemünd)
+- 2026-10-15 — Die Waldkinder öffnen ihren Bauwagen! (Theaterstraße)
+- 2026-10-15 — Kamishibai - Japanisches Erzähltheater (Schwetzingen)
+- 2026-10-15 — Faszination Astronomie: Die Suche nach der zweiten Erde (Heidelberg)
+- 2026-10-15 — Tanzen macht Spaß! - Informationstag Veranstaltung für Menschen ab 60 (Heidelberg)
+- 2026-10-16 — Kindermusical der Singschule Mosbach (Stiftskirche)
+- 2026-10-16 — Fr , 16.10.2026 , 19:00 (Neckargemünd)
+- 2026-10-16 — The Essence of Tantra (Heidelberg)
+- 2026-10-17 — Kasper lernt zaubern (Heidelberg)
+- 2026-10-17 — Sa , 17.10.2026 , 10:00 - 16:00 (Neckargemünd)
+- 2026-10-17 — Herbstfest der Kindergärten Pusteblume (Heidelberg)
+- 2026-10-17 — Kindermusical in der Ev. Stadtkirche (Evang. Stadtkirche, Pfarrstraße 3)
+- 2026-10-17 — Flohmarkt (Europaplatz)
+- 2026-10-17 — Rap-Workshop zur "Schatzkammer Grundrechte" (Wiesloch)
+- 2026-10-18 — LAUT! Der Enjoy Jazz Kindertag (Heidelberg)
+- 2026-10-18 — Die gestohlenen Noten (Heidelberg)
+- 2026-10-18 — Malkurs für Kinder (Heidelberg)
+- 2026-10-18 — So , 18.10.2026 , 11:00 - 16:00 (Neckargemünd)
 
 ---
 *Automatisch erzeugt vom Scan-Lauf. Angaben ohne Gewähr.*
